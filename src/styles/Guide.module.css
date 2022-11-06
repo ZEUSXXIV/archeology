@@ -1,0 +1,25 @@
+
+button{
+    width:350px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    
+}
+.title{
+    font-size: 2rem;
+}
+button:hover{
+    border-bottom: #28311B 3px solid;
+}
+.buttons{
+    border-bottom: black 1px solid;
+}
+.guide{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
