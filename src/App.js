@@ -7,6 +7,7 @@ import Featured from './pages/Featured'
 import About from './pages/About'
 import Body from './components/Home/Body'
 import './styles/global.css'
+import SiteTable from './components/SiteTable'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Navbar/>
     <Landing/>
     <Body/>
+    <SiteTable/>
     {/* <Featured />
     <Protected />
     <Landing/>
