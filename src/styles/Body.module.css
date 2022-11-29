@@ -1,0 +1,930 @@
+.body {
+    padding: 3rem 6rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .body p {
+    line-height: 1.5;
+  }
+  
+  .modalHeading {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  
+  .headerText {
+    text-align: center;
+    color: #8b8c8c;
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  
+  .launchpadService {
+    margin-top: 4rem;
+  }
+  
+  .launchpadService h1 {
+    color: #333230;
+    font-size: 4.6rem;
+    text-align: center;
+  }
+  
+  .launchpadSubtitle {
+    color: #8b8c8c;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .launchpadServices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .launchpadSingleService {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    width: 100%;
+  }
+  
+  .launchpadSingleService h2 {
+    color: #333230;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .launchpadSingleService p {
+    color: #8b8c8c;
+    font-size: 1.2rem;
+  }
+  
+  .launchpadSingleServiceImage {
+    flex: 2;
+  }
+  
+  .launchpadSingleServiceImage img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .launchpadSingleServiceDetails {
+    flex: 5;
+  }
+  
+  .scale2SuccessService {
+    margin-top: 4rem;
+  }
+  
+  .scale2SuccessService h1 {
+    color: #333230;
+    font-size: 4.6rem;
+    text-align: center;
+  }
+  
+  .scale2SuccessSubtitle {
+    color: #8b8c8c;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .scale2SuccessServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .scale2SuccessSingleService {
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: red; */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  
+  .scale2SuccessSingleService h2 {
+    color: #333230;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .scale2SuccessSingleService p {
+    color: #8b8c8c;
+    font-size: 1.2rem;
+  }
+  
+  .scale2SuccessSingleServiceImage {
+    flex: 1;
+  }
+  
+  .scale2SuccessSingleServiceImage img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .scale2SuccessSingleServiceDetails {
+    flex: 4;
+  }
+  
+  .serviceMark {
+    font-size: 2.3rem;
+    font-weight: 400;
+  }
+  
+  .ourFeaturedHeading {
+    margin-top: 5rem;
+    color: #333230;
+    font-size: 4.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .ourServicesImage {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .focusBusinessIdea {
+    color: #333230;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  
+  .insightsHeroTitle {
+    color: #333230;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  
+  .insightHeading {
+    font-size: 4.6rem;
+    text-align: center;
+    color: #333230;
+  }
+  
+  .pdfButtons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  
+  .knowMorePdf {
+    background: none;
+    background-color: #333230;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-width: 0.1rem;
+    font-weight: 500;
+    font-family: "Josefin Sans";
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8b8c8c;
+    width: 100%;
+  }
+  
+  .detailsHeader {
+    color: #333230;
+    font-size: 2rem;
+  }
+  
+  .details h1 {
+    display: none;
+  }
+  
+  .textRight {
+    text-align: right;
+  }
+  
+  .detailsHeaderRev {
+    color: #333230;
+    font-size: 2rem;
+    text-align: right;
+  }
+  
+  .detailsRev {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: #8b8c8c;
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .detail p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  
+  .detailsCTA {
+    background: none;
+    background-color: #333230;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-width: 0.1rem;
+    font-weight: 500;
+    font-family: "Josefin Sans";
+    text-decoration: none;
+  }
+  
+  .knowMoreButtonLeft {
+    align-items: flex-end;
+  }
+  
+  .knowMoreS2SImage {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .knowMoreLaunchpadImage {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .marketingBody {
+    padding: 3rem 4rem 1rem 4rem;
+  }
+  
+  .marketingText {
+    color: #044444;
+    font-size: 2rem;
+  }
+  
+  .marketingIntro {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+  }
+  
+  .marketingIntro h1 {
+    font-size: 3.5rem;
+    color: #044444;
+  }
+  
+  .marketingFeatureImage {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .formationBody {
+    padding: 3rem 4rem 1rem 4rem;
+  }
+  
+  .formationIntro {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+  }
+  
+  .formationText {
+    color: #044444;
+    font-size: 1rem;
+  }
+  
+  .formationIntro h1 {
+    font-size: 3.5rem;
+    color: #044444;
+  }
+  
+  .formationFeatureImage {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .brandingVideo {
+    display: none;
+  }
+  
+  .brandingImage {
+    width: 1100px;
+    height: 700px;
+    border-radius: 10px;
+  }
+  
+  .brandingBestFeaturesImage {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .featured {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+    padding: 2rem 4.5rem 1rem 4.5rem;
+  }
+  
+  .featured h1 {
+    font-size: 3.5rem;
+    color: #044444;
+  }
+  
+  .featuredOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 1rem;
+  }
+  
+  .featuredTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  .featuredThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bestFeatures {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+    background-color: #eee;
+  }
+  
+  .bestFeatures h1 {
+    font-size: 3.5rem;
+    color: #333230;
+  }
+  
+  .bestFeatures p {
+    line-height: 1.5;
+  }
+  
+  .bestFeaturesIntro {
+    padding: 2rem 4.5rem 1rem 4.5rem;
+  }
+  
+  .brandList {
+    list-style: none;
+  }
+  
+  .brandList li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #fec93d; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+  }
+  
+  .knowMoreBody {
+    padding: 5rem 4rem 1rem 4rem;
+  }
+  
+  .firstPart {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .firstPart h1 {
+    color: #e1645f;
+  }
+  
+  .s2sHeadingOur {
+    font-size: 6rem;
+    text-align: right;
+    transform: rotate(-90deg);
+    color: #eb7571;
+  }
+  
+  .s2sHeadingServices {
+    font-size: 6.5rem;
+  }
+  
+  .humanCapitalFeatureImage {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .humanCapitalDetailImage {
+    width: 325px;
+    height: 325px;
+  }
+  
+  .humanCapitalDetailShoutout {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .insightsImage {
+    width: 350px;
+    height: 350px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .firstPart {
+      flex-direction: column;
+    }
+  
+    .s2sHeadingOur {
+      font-size: 4rem;
+      transform: rotate(0deg);
+    }
+  
+    .s2sHeadingServices {
+      font-size: 4rem;
+    }
+  }
+  
+  .humanCapitalBody {
+    padding: 3rem 4rem 1rem 4rem;
+  }
+  
+  .humanCapitalIntro {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+  }
+  
+  .humanCapitalIntro h1 {
+    font-size: 3.5rem;
+    color: #044444;
+  }
+  
+  .humanCapitalIntro p {
+    line-height: 1.5;
+  }
+  
+  .humanCapitalFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .humanCapitalFeature {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .humanCapitalDetail {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+  }
+  
+  .humanCapitalDetailIntro h1 {
+    font-size: 3.5rem;
+    color: #044444;
+  }
+  
+  .humanCapitalDetailIntro p {
+    line-height: 1.5;
+  }
+  
+  .recruitService {
+    color: #8b8c8c;
+    font-size: 1.5rem;
+  }
+  
+  .recruitService h1 {
+    font-size: 3.5rem;
+    color: #044444;
+  }
+  
+  .recruitService p {
+    line-height: 1.5;
+  }
+  
+  .recruitServices {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .recruitService h2 {
+    color: #044444;
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    .pdfButtons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .pdfButtons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 610px) {
+    .body {
+      padding: 3rem 1rem;
+    }
+  
+    .focusBusinessIdea {
+      font-size: 2.5rem;
+    }
+  
+    .insightsHeroTitle {
+      font-size: 2rem;
+    }
+  
+    .insightHeading {
+      font-size: 3.4rem;
+    }
+  
+    .details {
+      display: block;
+    }
+  
+    .details h1 {
+      display: none;
+    }
+  
+    .detailsRev {
+      display: block;
+    }
+  
+    .detailsHeader {
+      color: #333230;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .textRight {
+      text-align: center;
+    }
+  
+    .textLeft {
+      text-align: center;
+    }
+  
+    .detailsHeaderRev {
+      color: #333230;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .knowMoreButtonRight {
+      align-items: center;
+    }
+  
+    .knowMoreButtonLeft {
+      align-items: center;
+    }
+  
+    .s2sHeadingOur {
+      font-size: 2.5rem;
+      transform: rotate(0deg);
+    }
+  
+    .s2sHeadingServices {
+      font-size: 2.5rem;
+    }
+  
+    .recruitServices {
+      flex-direction: column;
+    }
+  
+    .knowMoreBody {
+      padding: 2rem 2rem 1rem 2rem;
+    }
+  
+    .humanCapitalIntro {
+      color: #8b8c8c;
+    }
+  
+    .humanCapitalIntro h1 {
+      font-size: 3.5rem;
+      color: #044444;
+    }
+  
+    .humanCapitalIntro p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  
+    .formationBody {
+      padding: 2rem 2rem 1rem 2rem;
+    }
+  
+    .formationIntro h1 {
+      font-size: 2.5rem;
+      color: #044444;
+    }
+  
+    .formationIntro h1 {
+      font-size: 2.5rem;
+      color: #044444;
+    }
+  
+    .formationFeatureImage {
+      width: 325px;
+      height: 325px;
+    }
+  
+    .formationText {
+      /* color: #044444; */
+      font-size: 1.5rem;
+    }
+  
+    .featuredOne {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .featuredTwo {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .featuredThree {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .featured h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .featured p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .brandingImage {
+      width: 300px;
+      height: 200px;
+    }
+  
+    .bestFeaturesIntro h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+  
+    .bestFeaturesIntro p {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  
+    .marketingIntro h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .marketingIntro p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .marketingBody {
+      padding: 3rem 1rem 1rem 1rem;
+    }
+    .marketingText {
+      /* color: #044444; */
+      font-size: 1.4rem;
+    }
+  
+    .humanCapitalFeatures {
+      display: flex;
+      flex-direction: column;
+      /* grid-template-columns: 0fr 0fr 0fr; */
+    }
+  
+    .humanCapitalBody {
+      padding: 3rem 2rem 1rem 2rem;
+    }
+  
+    .humanCapitalIntro h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .humanCapitalDetailIntro h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+  
+    .humanCapitalDetailIntro p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .HCdetailsh2 {
+      font-size: 1.5rem;
+    }
+  
+    .recruitService h1 {
+      font-size: 1.6rem;
+      text-align: center;
+      color: #044444;
+    }
+  
+    .recruitService p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .recruitServices h2 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .ourFeaturedHeading {
+      font-size: 3.2rem;
+    }
+  
+    .launchpadServices {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .launchpadService h1 {
+      font-size: 3rem;
+    }
+  
+    .launchpadSubtitle {
+      font-size: 1.4rem;
+    }
+  
+    .launchpadSingleService {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.5rem;
+    }
+  
+    .launchpadSingleServiceDetails {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+  
+    .launchpadSingleServiceDetails h2 {
+      font-size: 1.5rem;
+    }
+  
+    .launchpadSingleServiceDetails p {
+      font-size: 1.2rem;
+    }
+  
+    .scale2SuccessService {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .scale2SuccessService h1 {
+      font-size: 3rem;
+    }
+  
+    .scale2SuccessSubtitle {
+      font-size: 1.4rem;
+    }
+  
+    .scale2SuccessServices {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .scale2SuccessSingleService {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.5rem;
+    }
+  
+    .scale2SuccessSingleServiceDetails {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+  
+    .scale2SuccessSingleServiceDetails h2 {
+      font-size: 1.5rem;
+    }
+  
+    .scale2SuccessSingleServiceDetails p {
+      font-size: 1.2rem;
+    }
+  
+    .serviceMark {
+      font-size: 1.5rem;
+    }
+  
+    .pdfButtons {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      gap: 10px;
+    }
+  
+    .detailsCTA {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  
+    .knowMorePdf {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  
+    .modalHeading {
+      font-size: 1rem;
+    }
+  
+    .formControl {
+      width: 100%;
+      position: relative;
+    }
+  
+    .formControl input {
+      padding: 0.7rem;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 75%;
+      font-family: Josefin Sans;
+      font-size: 1rem;
+    }
+  
+    .formControl input::placeholder {
+      font-family: Josefin Sans;
+      font-size: 1rem;
+    }
+  
+    .formControl button {
+      /* position: relative; */
+      align-self: center;
+      background: #333230;
+      border: 1px solid white;
+      color: white;
+      font-family: Josefin Sans;
+      font-size: 0.8rem;
+      padding: 0.8rem;
+      width: 22%;
+      border-radius: 1rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+  
+    .humanCapitalDetailShoutout {
+      width: 350px;
+      height: 350px;
+    }
+  
+    .humanCapitalFeatureImage {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .knowMoreS2SImage {
+      width: 350px;
+      height: 350px;
+    }
+  
+    .knowMoreLaunchpadImage {
+      width: 350px;
+      height: 350px;
+    }
+  
+    .ourServicesImage {
+      width: 325px;
+      height: 325px;
+    }
+  
+    .brandingVideo {
+      display: block;
+    }
+  
+    .mobileBrand {
+      width: 400px;
+      height: 300px;
+    }
+  }
+  

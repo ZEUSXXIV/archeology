@@ -255,7 +255,7 @@ const Navbar = ({ from, handleClick, noline }) => {
           </a>
         </motion.div>
 
-        {noline != "true" && (
+        {/* {noline != "true" && (
           <motion.div
             className={styles.progress}
             style={{
@@ -269,7 +269,7 @@ const Navbar = ({ from, handleClick, noline }) => {
               height: "2px",
             }}
           />
-        )}
+        )} */}
       </div>
     </>
   );

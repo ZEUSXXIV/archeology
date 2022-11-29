@@ -9,7 +9,7 @@ const Landing = () => {
   return (
     <div className={styles.containerBanner}>
       <div className={styles.bannerDiv} >
-        <h1 >DIRECTORATE OF ARCHEOLOGY GOVERNMENT OF GOA</h1>
+        {/* <h1 >DIRECTORATE OF ARCHEOLOGY GOVERNMENT OF GOA</h1> */}
       </div>
     </div>
   );
