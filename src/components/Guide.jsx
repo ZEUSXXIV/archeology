@@ -1,5 +1,7 @@
 import styles from '../styles/Guide.module.css'
 import React from "react"
+import Officer from './Officer'
+import History from './History'
 export default function Guide(){
 
 const [state,setState]=React.useState({
@@ -19,14 +21,15 @@ const [state,setState]=React.useState({
          }))
 
      }
+    
     return(
             <div className={`${styles.guide}`}>
                 <p className={`${styles.title}`}>About Us</p>
-               <div className={`${styles.buttons}`}> <button name="history"  className="" onClick={handleChange}>History</button>
+               <div className={`${styles.buttons}`}> <button name="history"  className="" onClick={handleChange}>Introduction</button>
                 <button name="officers" className="" onClick={handleChange}>Officers</button>
                 <button name="chart" className="" onClick={handleChange}>Chart</button></div>
-                <div>{state.history && <p>History</p>}</div>
-                <div>{state.officers && <p>Officer</p>}</div>
+                <div className={`${styles.history_text}`}>{state.history && <History/>}</div> 
+                <div className={`${styles.history_text}`}>{state.officers &&<> <Officer/> </>}</div>
                 <div>{state.chart&& <p>chart</p>}</div>
             </div>
         )

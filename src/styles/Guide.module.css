@@ -2,8 +2,9 @@
 button{
     width:350px;
     height: 30px;
-    background-color: white;
+    background-color: #ccc;
     border: none;
+    border-bottom:  black 1px solid; ;
     font-size: 1rem;
     margin-bottom: 0px;
     
@@ -14,12 +15,17 @@ button{
 button:hover{
     border-bottom: #28311B 3px solid;
 }
-.buttons{
+/* .buttons{
     border-bottom: black 1px solid;
+} */
+.history_text{
+    justify-items: center;
+  max-width:65% ;
 }
 .guide{
     display: grid;
+    justify-items:center;
     justify-content: center;
-    align-items: center;
-    background-color: white;
+ 
+    
 }
