@@ -11,6 +11,8 @@ body {
   scroll-snap-type: y;
 }
 
+
+
 @media (max-width: 800px) {
   html,
   body {

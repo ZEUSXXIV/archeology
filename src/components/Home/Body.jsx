@@ -158,6 +158,25 @@ const Body = () => {
       </div>
 
       <h1 className={styles.ourFeaturedHeading}>OUR FEATURED MONUMENTS</h1>
+      <div className={styles.detailsRev}>
+        <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
+          <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>
+          <p className={styles.textLeft}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error
+            laborum quia assumenda animi asperiores accusamus explicabo quos
+            placeat qui expedita maiores enim quo distinctio facere vitae
+            repudiandae, dicta dolor aliquam atque ea suscipit maxime. Obcaecati
+            minima quas iure iusto veniam soluta. Iusto quibusdam laboriosam
+            fugit fuga consectetur quas maxime.
+          </p>
+          <a className={styles.detailsCTA} href="/branding">
+            LEARN MORE
+          </a>
+        </div>
+        <div>
+          <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
+        </div>
+      </div>
       <div className={styles.details}>
         <div className={`${styles.detail} ${styles.knowMoreButtonLeft} `}>
           <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>

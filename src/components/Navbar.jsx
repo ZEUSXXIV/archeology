@@ -98,9 +98,9 @@ const Navbar = ({ from, handleClick, noline }) => {
           <li>
             <a>MONUMENT DETAILS</a>
           </li>
-          <li>
+          {/* <li>
             <a>GALLERY</a>
-          </li>
+          </li> */}
           <li>
             <a>ABOUT US</a>
           </li>
@@ -152,8 +152,8 @@ const Navbar = ({ from, handleClick, noline }) => {
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                  //   href="https://devlabs.coppercodes.com/about-us/"
-                  target="_blank"
+                    href="/"
+                  //target="_blank"
                   rel="noreferrer"
                 >
                   HOME
@@ -163,8 +163,8 @@ const Navbar = ({ from, handleClick, noline }) => {
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                  href="https://devlabs.coppercodes.com/about-us/"
-                  target="_blank"
+                  href="/protected-monuments"
+                  //target="_blank"
                   rel="noreferrer"
                 >
                   PROTECTED MONUMENTS
@@ -174,8 +174,8 @@ const Navbar = ({ from, handleClick, noline }) => {
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                  href="https://devlabs.coppercodes.com/about-us/"
-                  target="_blank"
+                  href="featured-monuments"
+                  //target="_blank"
                   rel="noreferrer"
                 >
                   FEATURED MONUMENTS
@@ -185,30 +185,30 @@ const Navbar = ({ from, handleClick, noline }) => {
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                  href="https://devlabs.coppercodes.com/about-us/"
-                  target="_blank"
+                  href="/monument-list"
+                  //target="_blank"
                   rel="noreferrer"
                 >
                   MONUMENT DETAILS
                 </a>
               </motion.li>
 
-              <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+              {/* <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                  href="https://devlabs.coppercodes.com/about-us/"
-                  target="_blank"
+                  href="/gallery"
+                  //target="_blank"
                   rel="noreferrer"
                 >
                   GALLERY
                 </a>
-              </motion.li>
+              </motion.li> */}
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                  href="https://devlabs.coppercodes.com/about-us/"
-                  target="_blank"
+                  href="/about-us"
+                  //target="_blank"
                   rel="noreferrer"
                 >
                   ABOUT US
