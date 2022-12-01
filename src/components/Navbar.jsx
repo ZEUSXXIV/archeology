@@ -1,14 +1,12 @@
 import styles from "../styles/Navbar.module.css";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 // import ServicesDropdown from "./servicesDropdown";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsList, BsX } from "react-icons/bs";
-import coppercodesbluelogo from "../assets/logo.png";
 import coppercodeswhitelogo from "../assets/logo.png";
 
-const Navbar = ({ from, handleClick, noline }) => {
+const Navbar = () => {
   const [color, setColor] = useState("#28311b");
-  const { scrollYProgress } = useScroll();
   const [isActive, setActive] = useState(false);
   const [isActiveServices, setActiveServices] = useState(false);
 
@@ -17,59 +15,13 @@ const Navbar = ({ from, handleClick, noline }) => {
     setActiveServices(false);
   };
 
-  const scaleX = useSpring(scrollYProgress || document.body.scrollTop);
 
-  const listenScrollEvent = (e) => {
-    if (window.scrollY > 50 || document.body.scrollTop > 50) {
-      setColor("white");
-    } else {
-      setColor("#28311b");
-    }
-  };
 
-  const headerTextColor = () => {
-    if (color === "white") {
-      if (from === "scale2Success") {
-        return "#eb7571";
-      } else if (from === "launchpad") {
-        return "#fec93d";
-      } else {
-        return "#3657B4";
-      }
-    } else if (color === "#28311b") {
-      if (from === "marketing") {
-        return "#3657B4";
-      } else if (from === "humanCapital" || from === "formation") {
-        return "#3657B4";
-      } else {
-        return "white";
-      }
-    }
-  };
+  const headerTextColor = () => "white"
 
-  const handleLogo = () => {
-    if (color === "white") {
-      return coppercodesbluelogo;
-    } else if (color === "#28311b") {
-      if (from === "marketing") {
-        return coppercodesbluelogo;
-      } else if (from === "humanCapital" || from === "formation") {
-        return coppercodesbluelogo;
-      } else {
-        return coppercodeswhitelogo;
-      }
-    }
-  };
+  const handleLogo = () => coppercodeswhitelogo
+  
 
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-    document.body.addEventListener("touchmove", listenScrollEvent);
-
-    return () => {
-      window.removeEventListener("scroll", listenScrollEvent);
-      document.body.removeEventListener("touchmove", listenScrollEvent);
-    };
-  }, []);
 
   return (
     <>
@@ -90,19 +42,19 @@ const Navbar = ({ from, handleClick, noline }) => {
             <a>HOME</a>
           </li>
           <li>
-            <a>PROTECTED MONUMENTS</a>
+            <a href="/protected-monuments" >PROTECTED MONUMENTS</a>
           </li>
           <li>
-            <a>FEATURED MONUMENTS</a>
+            <a href="/featured-monuments" >FEATURED MONUMENTS</a>
           </li>
           <li>
-            <a>MONUMENT DETAILS</a>
+            <a href="/monument-list">MONUMENT DETAILS</a>
           </li>
           {/* <li>
             <a>GALLERY</a>
           </li> */}
           <li>
-            <a>ABOUT US</a>
+            <a href="/about-us" >ABOUT US</a>
           </li>
 
           {/* {from === "index" ? (
@@ -214,17 +166,6 @@ const Navbar = ({ from, handleClick, noline }) => {
                   ABOUT US
                 </a>
               </motion.li>
-
-              {from === "index" ? (
-                <motion.li
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.8 }}
-                >
-                  <a onClick={handleClick} style={{ color: headerTextColor() }}>
-                    CONTACT US
-                  </a>
-                </motion.li>
-              ) : null}
             </ul>
           </div>
         </div>

@@ -10,6 +10,7 @@ export default function Featured(){
     })
      return(
         <>
+        <h2>Featured Monuments</h2>
         {monuElements}
         </>
      )

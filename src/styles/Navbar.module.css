@@ -5,6 +5,9 @@
     padding: 1rem 6rem 0.1rem 6rem;
     z-index: 3;
     font-family: "Josefin Sans", sans-serif;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   
   .header a {

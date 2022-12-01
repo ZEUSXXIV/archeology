@@ -15,7 +15,9 @@ import MonumentList from './pages/MonumentList'
 const App = () => {
   return (
     <>
-    <div style={{backgroundColor:'#ccc'}}>
+    <div 
+    style={{backgroundColor:'#ccc', minHeight:'100vh'}}
+    >
       
       <Router>
       <Navbar/>

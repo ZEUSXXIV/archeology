@@ -10,7 +10,10 @@ export default function Protected(){
     })
      return(
         <>
+        <div style={{margin:'5% 10% 0% 10%'}}>
+        <h1 style={{textAlign:'center'}}>Protected Monuments</h1>
         {monuElements}
+        </div>
         </>
      )
 }
