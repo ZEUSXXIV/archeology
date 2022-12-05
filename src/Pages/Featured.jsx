@@ -10,8 +10,10 @@ export default function Featured(){
     })
      return(
         <>
-        <h2>Featured Monuments</h2>
+        <div style={{margin:'5% 10% 0% 10%'}}>
+        <h1 style={{textAlign:'center'}}>Featured Monuments</h1>
         {monuElements}
+        </div>
         </>
      )
 }

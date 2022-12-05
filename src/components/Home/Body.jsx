@@ -10,13 +10,16 @@ const Body = () => {
           DIRECTORATE OF ARCHEOLOGY GOVERNMENT OF GOA
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          tempore dolorem quibusdam molestiae odio labore rem cupiditate ipsum
-          libero! Necessitatibus soluta temporibus quod illum reprehenderit
-          corporis quo sapiente debitis odit! Aliquam doloremque totam
-          obcaecati, consequuntur esse accusantium! Sequi quo nemo delectus
-          voluptatem, esse perspiciatis quam ducimus repellendus, voluptate
-          laborum dolore.
+          Archaeology Department headed by the Director (Add. Charge),
+          undertakes village wise survey of the antiquities and also
+          conservation, restoration and vegetation clearance work at the 51
+          monuments/sites protected under the Goa Ancient Monuments and
+          Archaeological Sites and Remains Act, 1978 and Rules, !980. Goa has a
+          rich cultural heritage & needs to be explored on scientific line
+          keeping its archaeological importance. In view of this, several
+          restoration works are planned to safeguard the cultural heritage for
+          posterity. Regular participation in academic/research and awareness
+          programs are important activities of the Unit.
         </p>
       </div>
 
