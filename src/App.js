@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
     <div 
-    style={{backgroundColor:'#ccc', minHeight:'100vh'}}
+    style={{backgroundColor:'#fff', minHeight:'100vh'}}
     >
       
       <Router>

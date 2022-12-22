@@ -15,13 +15,9 @@ const Navbar = () => {
     setActiveServices(false);
   };
 
+  const headerTextColor = () => "#185763";
 
-
-  const headerTextColor = () => "white"
-
-  const handleLogo = () => coppercodeswhitelogo
-  
-
+  const handleLogo = () => coppercodeswhitelogo;
 
   return (
     <>
@@ -42,10 +38,10 @@ const Navbar = () => {
             <a>HOME</a>
           </li>
           <li>
-            <a href="/protected-monuments" >PROTECTED MONUMENTS</a>
+            <a href="/protected-monuments">PROTECTED MONUMENTS</a>
           </li>
           <li>
-            <a href="/featured-monuments" >FEATURED MONUMENTS</a>
+            <a href="/featured-monuments">FEATURED MONUMENTS</a>
           </li>
           <li>
             <a href="/monument-list">MONUMENT DETAILS</a>
@@ -54,7 +50,7 @@ const Navbar = () => {
             <a>GALLERY</a>
           </li> */}
           <li>
-            <a href="/about-us" >ABOUT US</a>
+            <a href="/about-us">ABOUT US</a>
           </li>
 
           {/* {from === "index" ? (
@@ -67,10 +63,7 @@ const Navbar = () => {
       <div
         className={styles.header}
         style={{
-            background:'#333230'
-        //   backgroundColor: color,
-        // background: "radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)",
-        //   boxShadow: color === "white" ? "0 0.5px 5px #888888" : "none",
+          background: "white",
         }}
       >
         <div className={styles.logoList}>
@@ -84,27 +77,27 @@ const Navbar = () => {
                 window.location.href = "/";
               }}
             >
-
               <img
                 loading="eager"
                 src={handleLogo()}
                 alt="logo"
                 className={styles.navLogo}
               />
-                
             </a>
           </div>
           {/* <Typography style={{maxWidth:'15%', color:'#fff'}}>
                     DIRECTORATE OF ARCHEOLOGY GOVERNMENT OF GOA
                 </Typography> */}
           <div className={styles.items}>
-            <ul style={{
-                 color: headerTextColor() 
-                 }}>
+            <ul
+              style={{
+                color: headerTextColor(),
+              }}
+            >
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
-                    href="/"
+                  href="/"
                   //target="_blank"
                   rel="noreferrer"
                 >
@@ -212,6 +205,10 @@ const Navbar = () => {
           />
         )} */}
       </div>
+      <div 
+      // style={{ height: "2px", backgroundColor: "blue" }}
+      className={styles.progressBar}
+       />
     </>
   );
 };

@@ -26,7 +26,7 @@
   }
   
   .launchpadService h1 {
-    color: #333230;
+    color: #185763;
     font-size: 4.6rem;
     text-align: center;
   }
@@ -52,7 +52,7 @@
   }
   
   .launchpadSingleService h2 {
-    color: #333230;
+    color: #185763;
     font-size: 1.5rem;
     font-weight: 400;
   }
@@ -80,7 +80,7 @@
   }
   
   .scale2SuccessService h1 {
-    color: #333230;
+    color: #185763;
     font-size: 4.6rem;
     text-align: center;
   }
@@ -106,7 +106,7 @@
   }
   
   .scale2SuccessSingleService h2 {
-    color: #333230;
+    color: #185763;
     font-size: 1.5rem;
     font-weight: 400;
   }
@@ -136,7 +136,7 @@
   
   .ourFeaturedHeading {
     margin-top: 5rem;
-    color: #333230;
+    color: #185763;
     font-size: 4.2rem;
     font-weight: 600;
     text-align: center;
@@ -148,13 +148,13 @@
   }
   
   .focusBusinessIdea {
-    color: #333230;
+    color: #185763;
     font-size: 4rem;
     font-weight: 600;
   }
   
   .insightsHeroTitle {
-    color: #333230;
+    color: #185763;
     font-size: 4rem;
     font-weight: 600;
   }
@@ -162,7 +162,7 @@
   .insightHeading {
     font-size: 4.6rem;
     text-align: center;
-    color: #333230;
+    color: #185763;
   }
   
   .pdfButtons {
@@ -173,7 +173,7 @@
   
   .knowMorePdf {
     background: none;
-    background-color: #333230;
+    background-color: #185763;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -192,7 +192,7 @@
   }
   
   .detailsHeader {
-    color: #333230;
+    color: #185763;
     font-size: 2rem;
   }
   
@@ -205,7 +205,7 @@
   }
   
   .detailsHeaderRev {
-    color: #333230;
+    color: #185763;
     font-size: 2rem;
     text-align: right;
   }
@@ -235,7 +235,7 @@
   
   .detailsCTA {
     background: none;
-    background-color: #333230;
+    background-color: #185763;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -364,7 +364,7 @@
   
   .bestFeatures h1 {
     font-size: 3.5rem;
-    color: #333230;
+    color: #185763;
   }
   
   .bestFeatures p {
@@ -566,7 +566,7 @@
     }
   
     .detailsHeader {
-      color: #333230;
+      color: #185763;
       font-size: 2rem;
       text-align: center;
     }
@@ -580,7 +580,7 @@
     }
   
     .detailsHeaderRev {
-      color: #333230;
+      color: #185763;
       font-size: 2rem;
       text-align: center;
     }
@@ -881,7 +881,7 @@
     .formControl button {
       /* position: relative; */
       align-self: center;
-      background: #333230;
+      background: #185763;
       border: 1px solid white;
       color: white;
       font-family: Josefin Sans;
