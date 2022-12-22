@@ -160,17 +160,24 @@ const Body = () => {
       <h1 className={styles.ourFeaturedHeading}>OUR FEATURED MONUMENTS</h1>
       <div className={styles.detailsRev}>
         <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
-          <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>
+          <h2 className={styles.detailsHeader}>
+            Ruins of Brahmapuri, Ella in Tiswadi
+          </h2>
           <p className={styles.textLeft}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error
-            laborum quia assumenda animi asperiores accusamus explicabo quos
-            placeat qui expedita maiores enim quo distinctio facere vitae
-            repudiandae, dicta dolor aliquam atque ea suscipit maxime. Obcaecati
-            minima quas iure iusto veniam soluta. Iusto quibusdam laboriosam
-            fugit fuga consectetur quas maxime.
+            This Site in Ella (Old Goa) was the settlement of learned Brahmins
+            from ancient times called as ‘Brahmapuri’. Shiva under the name
+            “Gomanteshwar” is venerated here. The original temple is reported to
+            have been constructed in the 14th Century C.E. It is believed that
+            the ancient holy place of worship of Gomanteshwar was destroyed by
+            the Bahamani Kings and the same was rebuilt by Madhava Mantri a
+            minister of the Vijayanagar Empire. A tank near the temple is known
+            as Madhava Tirth. This temple was again destroyed by the Portuguese
+            during their conquest of Goa in early 16th Century C.E. Now Madhav
+            Tirth and a tank exist at this site alongwith a recently built
+            temple.
           </p>
           <a className={styles.detailsCTA} href="/branding">
-            LEARN MORE
+            VISIT SITE
           </a>
         </div>
         <div>
@@ -179,17 +186,20 @@ const Body = () => {
       </div>
       <div className={styles.details}>
         <div className={`${styles.detail} ${styles.knowMoreButtonLeft} `}>
-          <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>
+          <h2 className={styles.detailsHeader}>
+            Chapel of St. Xavier, Ella in Tiswadi.
+          </h2>
           <p className={styles.textRight}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis
-            blanditiis veritatis, dolores repellat voluptatibus perspiciatis
-            quasi. Repellendus eos ipsa deleniti, ducimus, placeat ea veniam
-            tempora voluptas velit, maxime labore. Animi sint error laborum,
-            voluptates optio possimus ipsum officia nostrum ut culpa accusamus
-            quia harum aliquid molestiae, perferendis, officiis dolores.
+            In the area near the site of the College of St. Paul, at Old Goa,
+            stands a small traditional Chapel of St. Francis Xavier. As per
+            popular belief, Saint Francis Xavier used to offer masses here. This
+            Chapel was dedicated to Saint Francis Xavier after his canonization
+            in 1622. After the College of St Paul was abandoned in 1570, the
+            chapel fell into ruins and the present chapel was re-built in 1884.
+            It has one altar and its architecture is of Doric order.
           </p>
           <a className={styles.detailsCTA} href="/marketing">
-            LEARN MORE
+            VISIT SITE
           </a>
         </div>
         <div>
@@ -198,17 +208,19 @@ const Body = () => {
       </div>
       <div className={styles.detailsRev}>
         <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
-          <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>
+          <h2 className={styles.detailsHeader}>
+            Chapel of Our Lady of Monte, Ella in Tiswadi.
+          </h2>
           <p className={styles.textLeft}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex error
-            laborum quia assumenda animi asperiores accusamus explicabo quos
-            placeat qui expedita maiores enim quo distinctio facere vitae
-            repudiandae, dicta dolor aliquam atque ea suscipit maxime. Obcaecati
-            minima quas iure iusto veniam soluta. Iusto quibusdam laboriosam
-            fugit fuga consectetur quas maxime.
+            Situated on the hill, the Chapel of Our Lady of Monte was
+            constructed in 1557, many years after the conquest of Goa to mark
+            the place where Adil Khan took position with his artillery. It is
+            called by the name of Nossa Senhora de Monte. It is situated on a
+            hill which commands a picturesque view of several historical
+            monuments of Old Goa.
           </p>
           <a className={styles.detailsCTA} href="/branding">
-            LEARN MORE
+            VISIT SITE
           </a>
         </div>
         <div>
@@ -217,14 +229,15 @@ const Body = () => {
       </div>
       <div className={styles.details}>
         <div className={`${styles.detail} ${styles.knowMoreButtonLeft} `}>
-          <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>
+          <h2 className={styles.detailsHeader}>
+            Ruins of College of St. Populo, Ella in Tiswadi.
+          </h2>
           <p className={styles.textRight}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-            doloribus excepturi voluptates omnis, odit quos delectus eaque
-            voluptate tenetur qui neque voluptatem. Nostrum, repellat ipsam.
-            Sint quis provident et possimus atque reprehenderit, enim illo
-            inventore voluptatum repellendus laborum vel laboriosam quibusdam
-            officiis maiores sequi tenetur molestiae facilis, ipsam fugit fuga!
+            The College of St. Populo also known as Collegio de Populo was
+            situated near the Convent of Augustinians. It was built in 1600 by
+            the Provincial Fr. Pedro da Cruz for the training of the young
+            brethren (brothers) of the Augustinian order. Group of buildings of
+            Augustinians including this college were abandoned in 1835.
           </p>
           <a
             rel="noreferrer"
@@ -232,7 +245,7 @@ const Body = () => {
             href="https://devlabs.coppercodes.com/"
             target="_blank"
           >
-            LEARN MORE
+            VISIT SITE
           </a>
         </div>
         <div>
@@ -241,17 +254,25 @@ const Body = () => {
       </div>
       <div className={styles.detailsRev}>
         <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
-          <h2 className={styles.detailsHeader}>Lorem Ipsum</h2>
+          <h2 className={styles.detailsHeader}>
+            Convent of St. Monica & Chapel, Ella in Tiswadi.
+          </h2>
           <p className={styles.textLeft}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Reprehenderit saepe voluptas consectetur ea voluptatum aliquam est a
-            dolor necessitatibus similique libero maiores, mollitia enim
-            possimus pariatur odio? Provident dignissimos aut, totam minima modi
-            fugiat harum illum eligendi itaque voluptatibus cupiditate ad nulla,
-            quia error incidunt tempora eaque deserunt? Dolorem, facere.
+            This monument is opposite to St. Augustine Tower. Foundation of this
+            Convent was laid by H.H. Archbishop, Dom Fr. Aleixo de Menezes on
+            2nd July 1606 and construction was completed in 1627. The Convent of
+            St. Monica is the oldest and biggest nunnery in the whole of Eastern
+            Asia. The Church of St. Monica (chapel of Weeping Cross) is attached
+            to the Convent. The main altar is dedicated to Santa Monica, mother
+            of St. Augustine while the side altars are dedicated to Divine Jesus
+            and Virgin Mary. There is also an altar dedicated to Christ (Weeping
+            Cross). The convent is large enough to accommodate hundred nuns.
+            From 1954 the building was taken over by the Portuguese army as a
+            barracks and by Indian troops in 1962 and was handed back to the
+            Church in 1968.
           </p>
           <a className={styles.detailsCTA} href="/humancapital">
-            LEARN MORE
+            VISIT SITE
           </a>
         </div>
         <div>
