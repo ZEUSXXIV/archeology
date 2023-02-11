@@ -6,7 +6,8 @@ export default function Featured(){
         return <Monument 
         key={monu.Id}
         Title={monu.Title} 
-        Description={monu.Description}/>
+        Description={monu.Description}
+        Map={monu.Map}/>
     })
      return(
         <>
