@@ -1,0 +1,24 @@
+.sub{
+    display: flex;
+    padding-top: 20px;
+   
+}
+.Vision {
+    padding: 100px;
+    padding-right: 10px;
+    border: #185763 1px solid;
+    border-radius: 80%;
+    text-align: center;
+    
+    
+}
+
+.Mission{
+    padding: 100px;
+    padding-left: 10px;
+    border: #185763 1px solid;
+    border-radius: 80%;
+    text-overflow: clip;
+    text-align: center;
+    
+}
