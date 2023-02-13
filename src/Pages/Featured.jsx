@@ -7,7 +7,8 @@ export default function Featured(){
         key={monu.Id}
         Title={monu.Title} 
         Description={monu.Description}
-        Map={monu.Map}/>
+        Map={monu.Map}
+        Geo={monu.Geo}/>
     })
      return(
         <>

@@ -15,13 +15,17 @@ export default function Monument(props) {
           <h3 style={{ fontSize: "1.5rem" }}>{props.Title}</h3>
           <div className={`${Styles.monu_para}`}>{desp}</div>
 
-          <button onClick={()=> console.log("props==>>",props)}>
+          <button>
             <a href={props.Map} target="_blank">
             Map
             </a>
           </button>
           
-          <button onClick={props.Geo}>Geo</button>
+          <button>
+            <a href={props.Geo} target="_blank">
+              Geo
+            </a>
+          </button>
         </div>
         <br />
       </div>
