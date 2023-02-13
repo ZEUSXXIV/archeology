@@ -3,7 +3,7 @@ export default[{
     Id:"1",
     Title:"Ruins of Brahmapuri, Ella in Tiswadi",
     Description:`This Site in Ella (Old Goa) \n was the settlement of learned Brahmins from ancient times called as ‘Brahmapuri’.  Shiva under the name “Gomanteshwar” is venerated here.  The original temple is reported to have been constructed in the 14th Century C.E.  It is believed that the ancient holy place of worship of Gomanteshwar was destroyed by the Bahamani Kings and the same was rebuilt by Madhava Mantri a minister of the Vijayanagar Empire.  A tank near the temple is known as Madhava Tirth.  This temple was again destroyed by the Portuguese during their conquest of Goa in early 16th Century C.E.   Now Madhav Tirth and a tank exist at this site alongwith a recently built temple.`
-    ,Map:"https://goo.gl/maps/E8apDQeW3owtuJAL6",
+    ,Map:"https://maps.app.goo.gl/64J56VnYZqAByCAMA?g_st=iwb",
     Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fGomanteshwar%2bTemple,%2bUnnamed%2bRoad,%2bElla,%2bGoa%2f%4015.48151075,73.93197248,219.21697757a,26544.62797105d,35y,0.87130312h,2.22455295t,0r%2fdata%3dCpcBGm0SZwolMHgzYmJmYmYzNzFlMTA1NTUzOjB4ZjdlMDg0ZGU3MmEyNWFlYRl_69Sm-_ouQCGMiSiBqHpSQCosR29tYW50ZXNod2FyIFRlbXBsZSwgVW5uYW1lZCBSb2FkLCBFbGxhLCBHb2EYAiABIiYKJAlHDG9g-LcuQBHnfzJZkqEuQBlBENyDaY1SQCGwIftPEYxSQCgC"
 },
 {
