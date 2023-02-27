@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'JosefinSans';
+    src: local('JosefinSans'), url(../assets/Fonts/JosefinSans-VariableFont_wght.ttf) format('truetype');
+  }
+.monu{
+    font-family: 'JosefinSans';
+/* background-color: white;
+    padding: 10px 25px;
+    inline-size: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 500px;
+    flex: 1 0 0 500px;
+    margin-left: 15px; */
+    
+  
+}
+.monu_para{
+    line-height: 1.5em;
+    text-align: justify;
+}
+.components{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.title{
+    font-size: 1.5rem;
+}
+.img{
+    height: 30vh;
+    width: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+   
+}
+.button{
+    background-color: #4f7942;
+    margin: 3px;
+    border-radius: 5px;
+    border-color: #4f7942;
+}
+.button a{
+    color: white;
+}

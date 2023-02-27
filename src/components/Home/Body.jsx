@@ -7,7 +7,7 @@ const Body = () => {
     <div className={styles.body}>
       <div className={styles.headerText}>
         <div className={styles.focusBusinessIdea}>
-          DIRECTORATE OF ARCHEOLOGY GOVERNMENT OF GOA
+          DIRECTORATE OF ARCHAEOLOGY GOVERNMENT OF GOA
         </div>
         <p>
           Archaeology Department headed by the Director (Add. Charge),

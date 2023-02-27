@@ -46,12 +46,13 @@ const Navbar = () => {
           <li>
             <a href="/monument-list">MONUMENT DETAILS</a>
           </li>
-          {/* <li>
-            <a>GALLERY</a>
-          </li> */}
+           <li>
+            <a href="/gallery">GALLERY</a>
+          </li>
           <li>
             <a href="/about-us">ABOUT US</a>
           </li>
+         
 
           {/* {from === "index" ? (
             <li>
@@ -73,7 +74,6 @@ const Navbar = () => {
             </a> */}
             <a
               onClick={() => {
-                sessionStorage.setItem("location", "https://coppercodes.com/");
                 window.location.href = "/";
               }}
             >
@@ -138,7 +138,7 @@ const Navbar = () => {
                 </a>
               </motion.li>
 
-              {/* <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+              <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor() }}
                   href="/gallery"
@@ -147,7 +147,7 @@ const Navbar = () => {
                 >
                   GALLERY
                 </a>
-              </motion.li> */}
+              </motion.li>
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a

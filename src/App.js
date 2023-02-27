@@ -11,6 +11,7 @@ import SiteTable from './components/SiteTable'
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import MonumentList from './pages/MonumentList'
+import Gallery from './pages/Gallery'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route element={<Protected/>} exact path='/protected-monuments' />
           <Route element={<About/>} exact path='/about-us' />
           <Route element={<MonumentList/>} exact path='/monument-list' />
+          <Route element={<Gallery/>} exact path='/gallery' />
         </Routes>
       </Router>
     
