@@ -1,0 +1,18 @@
+.monu{
+    font-family: 'JosefinSans';
+background-color: white;
+    padding: 10px 25px;
+    inline-size: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 320px;
+    flex: 1 0 0 300px;
+    margin-left: 15px;
+    
+  
+}
+.label{
+    font-size: 1.5rem;
+    height: 80px;
+    text-align: center;
+    margin: 3% auto;
+}

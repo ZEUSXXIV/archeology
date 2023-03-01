@@ -1,4 +1,4 @@
-import Styles from "../styles/Monument.module.css";
+import Styles from "../styles/Protected_Monument.module.css";
 import MainImage from "../assets/main.jpg";
 import { Link } from "react-router-dom";
 import AnchorLink from "antd/lib/anchor/AnchorLink";
