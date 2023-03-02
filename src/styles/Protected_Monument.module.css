@@ -60,13 +60,13 @@ background-color: white;
   } */
   
   .success:hover {
-    background-color: white;
-    color: #085d21;
-    border-color: #085d21;
+    background-color: white !important;
+    color: #085d21 !important;
+    border-color: #085d21 !important;
   }
 
-  /* .success:focus {
-    background-color: white;
-    color: #085d21;
-    border-color: #085d21;
-  } */
+   .success:focus {
+    background-color: white !important;
+    color: #085d21 !important;
+    border-color: #085d21 !important;
+  } 
