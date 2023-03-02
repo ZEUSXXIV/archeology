@@ -52,3 +52,21 @@ background-color: white;
 .button a{
     color: white;
 }
+
+
+/* .success {
+    background-color: green;
+    color: white;
+  } */
+  
+  .success:hover {
+    background-color: white;
+    color: #085d21;
+    border-color: #085d21;
+  }
+
+  /* .success:focus {
+    background-color: white;
+    color: #085d21;
+    border-color: #085d21;
+  } */

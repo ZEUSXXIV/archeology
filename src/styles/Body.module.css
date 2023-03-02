@@ -16,7 +16,7 @@
   
   .headerText {
     text-align: center;
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.4rem;
     line-height: 1.2;
   }
@@ -26,13 +26,13 @@
   }
   
   .launchpadService h1 {
-    color: #185763;
+    color: #000;
     font-size: 4.6rem;
     text-align: center;
   }
   
   .launchpadSubtitle {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.8rem;
     text-align: center;
   }
@@ -52,13 +52,13 @@
   }
   
   .launchpadSingleService h2 {
-    color: #185763;
+    color: #000;
     font-size: 1.5rem;
     font-weight: 400;
   }
   
   .launchpadSingleService p {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.2rem;
   }
   
@@ -80,13 +80,13 @@
   }
   
   .scale2SuccessService h1 {
-    color: #185763;
+    color: #000;
     font-size: 4.6rem;
     text-align: center;
   }
   
   .scale2SuccessSubtitle {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.8rem;
     text-align: center;
   }
@@ -108,13 +108,13 @@
   }
   
   .scale2SuccessSingleService h2 {
-    color: #185763;
+    color: #000;
     font-size: 1.5rem;
     font-weight: 400;
   }
   
   .scale2SuccessSingleService p {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.2rem;
   }
   
@@ -140,7 +140,7 @@
   
   .ourFeaturedHeading {
     margin-top: 5rem;
-    color: #185763;
+    color: #000;
     font-size: 4.2rem;
     font-weight: 600;
     text-align: center;
@@ -152,13 +152,13 @@
   }
   
   .focusBusinessIdea {
-    color: #185763;
+    color: #000;
     font-size: 4rem;
     font-weight: 600;
   }
   
   .insightsHeroTitle {
-    color: #185763;
+    color: #000;
     font-size: 4rem;
     font-weight: 600;
   }
@@ -166,7 +166,7 @@
   .insightHeading {
     font-size: 4.6rem;
     text-align: center;
-    color: #185763;
+    color: #000;
   }
   
   .pdfButtons {
@@ -177,7 +177,7 @@
   
   .knowMorePdf {
     background: none;
-    background-color: #185763;
+    background-color: #000;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -191,12 +191,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #8b8c8c;
+    color: #000;
     width: 100%;
   }
   
   .detailsHeader {
-    color: #185763;
+    color: #000;
     font-size: 2rem;
   }
   
@@ -209,7 +209,7 @@
   }
   
   .detailsHeaderRev {
-    color: #185763;
+    color: #000;
     font-size: 2rem;
     text-align: right;
   }
@@ -219,7 +219,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    color: #8b8c8c;
+    color: #000;
   }
   
   .detail {
@@ -239,7 +239,7 @@
   
   .detailsCTA {
     background: none;
-    background-color: #185763;
+    background-color: #000;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -274,7 +274,7 @@
   }
   
   .marketingIntro {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
   }
   
@@ -293,7 +293,7 @@
   }
   
   .formationIntro {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
   }
   
@@ -328,7 +328,7 @@
   }
   
   .featured {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
     padding: 2rem 4.5rem 1rem 4.5rem;
   }
@@ -361,14 +361,14 @@
   }
   
   .bestFeatures {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
     background-color: #eee;
   }
   
   .bestFeatures h1 {
     font-size: 3.5rem;
-    color: #185763;
+    color: #000;
   }
   
   .bestFeatures p {
@@ -458,7 +458,7 @@
   }
   
   .humanCapitalIntro {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
   }
   
@@ -488,7 +488,7 @@
   }
   
   .humanCapitalDetail {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
   }
   
@@ -502,7 +502,7 @@
   }
   
   .recruitService {
-    color: #8b8c8c;
+    color: #000;
     font-size: 1.5rem;
   }
   
@@ -570,7 +570,7 @@
     }
   
     .detailsHeader {
-      color: #185763;
+      color: #000;
       font-size: 2rem;
       text-align: center;
     }
@@ -584,7 +584,7 @@
     }
   
     .detailsHeaderRev {
-      color: #185763;
+      color: #000;
       font-size: 2rem;
       text-align: center;
     }
@@ -615,7 +615,7 @@
     }
   
     .humanCapitalIntro {
-      color: #8b8c8c;
+      color: #000;
     }
   
     .humanCapitalIntro h1 {
@@ -885,7 +885,7 @@
     .formControl button {
       /* position: relative; */
       align-self: center;
-      background: #185763;
+      background: #000;
       border: 1px solid white;
       color: white;
       font-family: Josefin Sans;

@@ -38,7 +38,7 @@ export default function Protected_Monument(props) {
             </a>
           </button>
           </div> */}
-          <Button onClick={()=>props.setIsModalOpen(true)}>
+          <Button className={`${Styles.success}`} onClick={()=>props.setIsModalOpen(true)}>
             Know More
           </Button>
           </div>

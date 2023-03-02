@@ -17,7 +17,10 @@ const App = () => {
   return (
     <>
     <div 
-    style={{backgroundColor:'#fff', minHeight:'100vh'}}
+    style={{
+      background: "rgb(176,137,84)",
+      background: "linear-gradient(0deg, rgba(176,137,84,1) 0%, rgba(255,255,255,1) 100%)",
+      minHeight:'100vh'}}
     >
       
       <Router>
