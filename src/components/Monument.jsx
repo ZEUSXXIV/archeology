@@ -2,7 +2,7 @@ import Styles from "../styles/Monument.module.css";
 import MainImage from "../assets/main.jpg";
 import { Link } from "react-router-dom";
 import AnchorLink from "antd/lib/anchor/AnchorLink";
-import { Anchor } from "antd";
+import { Anchor, Button } from "antd";
 export default function Monument(props) {
   var desp = props.Description;
   return (
@@ -14,18 +14,12 @@ export default function Monument(props) {
         <div>
           <h3 style={{ fontSize: "1.5rem" }}>{props.Title}</h3>
           <div className={`${Styles.monu_para}`}>{desp}</div>
-
-          <button>
-            <a href={props.Map} target="_blank">
-            Map
-            </a>
-          </button>
-          
-          <button>
-            <a href={props.Geo} target="_blank">
-              Geo
-            </a>
-          </button>
+          <Button className={`${Styles.success}`} onClick={()=>props.setIsModalOpen(true)}>
+            Know More
+          </Button>
+          <Button className={`${Styles.success}`}>
+            Gallery
+          </Button>
         </div>
         <br />
       </div>
