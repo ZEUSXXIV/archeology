@@ -4,7 +4,7 @@ import featured from "../assets/JS Data/Featured"
 import Monument from "../components/Monument"
 import { Modal, Typography } from "antd";
 
-import Styles from "../styles/Modal.module.css";
+import Styles from "../styles/ModalFeatured.module.css";
 import { useEffect } from "react";
 import MainImage from "../assets/main.jpg";
 
