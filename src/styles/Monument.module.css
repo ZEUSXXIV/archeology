@@ -2,17 +2,17 @@
     font-family: 'JosefinSans';
     src: local('JosefinSans'), url(../assets/Fonts/JosefinSans-VariableFont_wght.ttf) format('truetype');
   }
-/* .monu{
+.monu{
     font-family: 'JosefinSans';
-background-color: white;
+    background-color: white;
     padding: 10px 25px;
     inline-size: 60vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 500px;
+    width: 450px;
     flex: 1 0 0 500px;
-    margin-left: 15px;
+    margin-left: 35px;
     
-  
 }
 .monu_para{
     line-height: 1.5em;
@@ -23,7 +23,7 @@ background-color: white;
    flex-direction: column;
    height: 100%;
 
-} */
+}
 
 .title{
     font-size: 1.5rem;
