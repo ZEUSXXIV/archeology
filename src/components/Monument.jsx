@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AnchorLink from "antd/lib/anchor/AnchorLink";
 import { Anchor, Button, Typography } from "antd";
 export default function Monument(props) {
-  //to display only 25% of it's content
+  //to display only 20% of it's content
   var desp = props.Description.slice(0,200);
   return (
     <div className={`${Styles.monu}`}>
