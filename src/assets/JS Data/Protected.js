@@ -1,6 +1,7 @@
 export default[{
    
     Id:"1",
+    Image:"mainimg",
     Title:"Ruins of Brahmapuri, Ella in Tiswadi",
     Description:`This Site in Ella (Old Goa) \n was the settlement of learned Brahmins from ancient times called as ‘Brahmapuri’.  Shiva under the name “Gomanteshwar” is venerated here.  The original temple is reported to have been constructed in the 14th Century C.E.  It is believed that the ancient holy place of worship of Gomanteshwar was destroyed by the Bahamani Kings and the same was rebuilt by Madhava Mantri a minister of the Vijayanagar Empire.  A tank near the temple is known as Madhava Tirth.  This temple was again destroyed by the Portuguese during their conquest of Goa in early 16th Century C.E.   Now Madhav Tirth and a tank exist at this site alongwith a recently built temple.`
     ,Map:"https://maps.app.goo.gl/64J56VnYZqAByCAMA?g_st=iwb",
@@ -46,7 +47,7 @@ export default[{
     Title:"Casa de Polvora, Panelim in Tiswadi",
     Description:"‘CASA DE POLVORA’ or gunpowder factory was erected by the Viceroy Dom Francisco da Gama, which is mentioned in an inscription.\n It is the site of Portuguese artillery and mint and gun foundry where requirements of army and navy were manufactured."
     ,Map:"",
-    Geo:""
+    Geo:''
 },
 {
     Id:"8",

@@ -60,6 +60,7 @@ export default function Protected() {
                 Map={monu.Map}
                 Geo={monu.Geo}
                 setIsModalOpen={setIsModalOpen}
+                Image={monu.Image}
                 // setActiveItem={setActiveItem}
               />
             </div>

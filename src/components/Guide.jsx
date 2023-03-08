@@ -20,9 +20,7 @@ const [state,setState]=React.useState({
           [event.target.name]:true 
           
          }))
-
      }
-    
     return(
             <div className={`${styles.guide}`}>
                 <p className={`${styles.title}`}>About Us</p>

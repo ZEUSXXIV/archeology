@@ -14,7 +14,7 @@ const Body = () => {
           undertakes village wise survey of the antiquities and also
           conservation, restoration and vegetation clearance work at the 51
           monuments/sites protected under the Goa Ancient Monuments and
-          Archaeological Sites and Remains Act, 1978 and Rules, !980. Goa has a
+          Archaeological Sites and Remains Act, 1978 and Rules, 1980. Goa has a
           rich cultural heritage & needs to be explored on scientific line
           keeping its archaeological importance. In view of this, several
           restoration works are planned to safeguard the cultural heritage for
@@ -23,73 +23,9 @@ const Body = () => {
         </p>
       </div>
 
-      {/* <div className={styles.launchpadService}>
-        <h1>
-          LaunchPad<sup className={styles.serviceMark}>SM</sup>
-        </h1>
-        <p className={styles.launchpadSubtitle}>
-          Our LaunchPad<sup>SM</sup> solution is designed for new and
-          early-stage startups.
-        </p>
-        <div className={styles.launchpadServices}>
-          <div className={styles.launchpadSingleService}>
-            <div className={styles.launchpadSingleServiceImage}>
-              <img src={Dummy} alt="bulb" />
-            </div>
-            <div className={styles.launchpadSingleServiceDetails}>
-              <h2>Formation</h2>
-              <p>
-                Legal Registration, Business/Capital Structure, Vendor Selection
-                & more
-              </p>
-              <a className={styles.detailsCTA} href="/formation">
-                LEARN MORE
-              </a>
-            </div>
-          </div>
-
-          <div div className={styles.launchpadSingleService}>
-            <div className={styles.launchpadSingleServiceImage}>
-              <img src={Dummy} alt="Dartboard" />
-            </div>
-            <div className={styles.launchpadSingleServiceDetails}>
-              <h2>Branding</h2>
-              <p>
-                Brand Strategy, Logo, Website Design/Development, Digital
-                Content & more
-              </p>
-              <a className={styles.detailsCTA} href="/branding">
-                LEARN MORE
-              </a>
-            </div>
-          </div>
-
-          <div div className={styles.launchpadSingleService}>
-            <div className={styles.launchpadSingleServiceImage}>
-              <img src={Dummy} alt="mic" />
-            </div>
-            <div className={styles.launchpadSingleServiceDetails}>
-              <h2>Marketing</h2>
-              <p>
-                Social Media, SEO, Paid Search (PPC/SERP), Content Marketing &
-                more
-              </p>
-              <a className={styles.detailsCTA} href="/marketing">
-                LEARN MORE
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
+    
 
       <div className={styles.scale2SuccessService}>
-        {/* <h1>
-          Scale2Success
-          <sup className={styles.serviceMark}>SM</sup>
-        </h1> */}
-        {/* <p className={styles.scale2SuccessSubtitle}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quam aliquam eos dicta .
-        </p> */}
         <div className={styles.scale2SuccessServices}>
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
@@ -101,7 +37,7 @@ const Body = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
                 numquam?
               </p>
-              <a className={styles.detailsCTA} href="/humancapital">
+              <a className={styles.detailsCTA} href="/protected-monuments">
                 LEARN MORE
               </a>
             </div>
@@ -116,7 +52,7 @@ const Body = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
                 numquam?
               </p>
-              <a className={styles.detailsCTA} href="/humancapital">
+              <a className={styles.detailsCTA} href="/featured-monuments">
                 LEARN MORE
               </a>
             </div>
@@ -132,14 +68,14 @@ const Body = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
                 numquam?
               </p>
-              <a className={styles.detailsCTA} href="/humancapital">
+              <a className={styles.detailsCTA} href="/monument-list">
                 LEARN MORE
               </a>
             </div>
           </div>
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
-              <img src={Dummy} alt="gear" />
+              <img src={require('../../assets/Chart.jpg')} alt="gear" />
             </div>
             <div className={styles.scale2SuccessSingleServiceDetails}>
               <h2>About Us</h2>
@@ -149,9 +85,7 @@ const Body = () => {
               </p>
               <a
                 className={styles.detailsCTA}
-                href="https://devlabs.coppercodes.com/"
-                rel="noreferrer"
-                target="_blank"
+                href="/about-us"
               >
                 LEARN MORE
               </a>
@@ -179,7 +113,7 @@ const Body = () => {
             Tirth and a tank exist at this site alongwith a recently built
             temple.
           </p>
-          <a className={styles.detailsCTA} href="/branding">
+          <a className={styles.detailsCTA} href="/protected-monuments">
             VISIT SITE
           </a>
         </div>
@@ -201,7 +135,7 @@ const Body = () => {
             chapel fell into ruins and the present chapel was re-built in 1884.
             It has one altar and its architecture is of Doric order.
           </p>
-          <a className={styles.detailsCTA} href="/marketing">
+          <a className={styles.detailsCTA} href="/protected-monuments">
             VISIT SITE
           </a>
         </div>
@@ -222,7 +156,7 @@ const Body = () => {
             hill which commands a picturesque view of several historical
             monuments of Old Goa.
           </p>
-          <a className={styles.detailsCTA} href="/branding">
+          <a className={styles.detailsCTA} href="/protected-monuments">
             VISIT SITE
           </a>
         </div>
@@ -243,10 +177,8 @@ const Body = () => {
             Augustinians including this college were abandoned in 1835.
           </p>
           <a
-            rel="noreferrer"
             className={styles.detailsCTA}
-            href="https://devlabs.coppercodes.com/"
-            target="_blank"
+            href="/protected-monuments"
           >
             VISIT SITE
           </a>
@@ -274,7 +206,7 @@ const Body = () => {
             barracks and by Indian troops in 1962 and was handed back to the
             Church in 1968.
           </p>
-          <a className={styles.detailsCTA} href="/humancapital">
+          <a className={styles.detailsCTA} href="/protected-monuments">
             VISIT SITE
           </a>
         </div>
@@ -282,25 +214,9 @@ const Body = () => {
           <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
-      {/* <div className={styles.detailsRev}>
-          <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
-            <h2 className={styles.detailsHeader}>
-              Lorem Ipsum is simply dummy text of the printing
-            </h2>
-            <p className={styles.textLeft}>
-              Your customers will experience the highest level of user
-              experience and satisfaction with the apps and custom software that
-              we build for you. Ease of use, simplistic design, and outstanding
-              functionality are what we swear by. Be rest assured of an
-              increased business reach and digital excellence with our mobile
-              development, web app development, and software development.
-            </p>
-            <a className={styles.detailsCTA}>LEARN MORE</a>
-          </div>
-          <div>
-            <Image src={mountain} width={550} height={500} alt="Mountain" />
-          </div>
-        </div> */}
+      <footer>
+        
+      </footer>
     </div>
   );
 };
