@@ -4,15 +4,15 @@
   }
 .monu{
     font-family: 'JosefinSans';
-    background-color: white;
+/* background-color: white;
     padding: 10px 25px;
     inline-size: 60vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 500px;
-    width: 450px;
     flex: 1 0 0 500px;
-    margin-left: 35px;
+    margin-left: 15px; */
     
+  
 }
 .monu_para{
     line-height: 1.5em;
@@ -21,12 +21,11 @@
 .components{
    display: flex;
    flex-direction: column;
-   height: 100%;
 
 }
+
 .title{
     font-size: 1.5rem;
-    height: 80px;
 }
 .img{
     height: 30vh;
@@ -40,14 +39,14 @@
 .buttons{
     display: flex;
     flex-direction: row;
+   
 }
-.success:hover {
-    background-color: white !important;
-    color: #3e1618 !important;
-    border-color: #3e1618 !important;
+.button{
+    background-color: #3e1618;
+    margin: 3px;
+    border-radius: 5px;
+    border-color: #3e1618;
 }
-.success:focus {
-    background-color: white !important;
-    color: #3e1618 !important;
-    border-color: #3e1618 !important;
-} 
+.button a{
+    color: white;
+}

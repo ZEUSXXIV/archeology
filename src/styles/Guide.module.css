@@ -1,12 +1,10 @@
-
 button{
-    width:350px;
+    width:280px;
     height: 30px;
-    background-color: transparent;
+    background-color: #ffffff;
     border: none;
-    border-bottom:  black 1px solid; ;
     font-size: 1rem;
-    margin-bottom: 0px;
+    margin-right: 10px;
     
 }
 .title{
@@ -30,6 +28,19 @@ button:active{
     display: grid;
     justify-items:center;
     justify-content: center;
- 
     
 }
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.success:hover {
+    background-color: white !important;
+    color: #3e1618 !important;
+    border-color: #3e1618 !important;
+}
+.success:focus {
+    background-color: white !important;
+    color: #3e1618 !important;
+    border-color: #3e1618 !important;
+} 
