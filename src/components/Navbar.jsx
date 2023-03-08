@@ -92,11 +92,12 @@ const Navbar = () => {
             <ul
               style={{
                 color: headerTextColor(),
+                fontSize: "13px",
               }}
             >
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  style={{ color: headerTextColor() }}
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="/"
                   //target="_blank"
                   rel="noreferrer"
@@ -107,7 +108,7 @@ const Navbar = () => {
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  style={{ color: headerTextColor() }}
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="/protected-monuments"
                   //target="_blank"
                   rel="noreferrer"
@@ -118,7 +119,7 @@ const Navbar = () => {
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  style={{ color: headerTextColor() }}
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="featured-monuments"
                   //target="_blank"
                   rel="noreferrer"
@@ -129,7 +130,7 @@ const Navbar = () => {
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  style={{ color: headerTextColor() }}
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="/monument-list"
                   //target="_blank"
                   rel="noreferrer"
@@ -140,7 +141,7 @@ const Navbar = () => {
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  style={{ color: headerTextColor() }}
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="/gallery"
                   //target="_blank"
                   rel="noreferrer"
@@ -151,7 +152,7 @@ const Navbar = () => {
 
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
-                  style={{ color: headerTextColor() }}
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="/about-us"
                   //target="_blank"
                   rel="noreferrer"

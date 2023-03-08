@@ -37,8 +37,8 @@ const [state,setState]=React.useState({
                 >
                 About Us
                 </Typography>
-                <div className={`${styles.buttons}`}> <button name="history"  className="" onClick={handleChange}>Introduction</button>
-                <button name="officers" className="" onClick={handleChange}>Officers</button>
+                <div className={`${styles.buttons}`}> <button style={{marginRight: "10px"}} name="history"  className="" onClick={handleChange}>Introduction</button>
+                <button style={{marginRight: "10px"}} name="officers" className="" onClick={handleChange}>Officers</button>
                 <button name="chart" className="" onClick={handleChange}>Chart</button></div>
                 <div className={`${styles.history_text}`}>{state.history && <History/>}</div> 
                 <div className={`${styles.history_text}`}>{state.officers &&<> <Officer/> </>}</div>
