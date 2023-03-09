@@ -15,7 +15,7 @@ const Gallery = () => {
    style={{
         display: "flex",
         flexWrap: "wrap",
-        gap: "15px",
+        gap: "30px",
         justifyContent: "center",
         alignItems: "center",
       }}>
