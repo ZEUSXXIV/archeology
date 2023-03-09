@@ -13,8 +13,8 @@ background-color: white;
   
 }
 .monu:hover{
-    height: 400px;
-    inline-size: 52vh;
+    box-shadow:rgba(0, 0, 0, 0.24) 10px 10px 10px ;
+    
 }
 .container{
     display: flex;
