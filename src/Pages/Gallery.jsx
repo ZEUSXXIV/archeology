@@ -1,11 +1,10 @@
 import React from "react";
-import { useState,useEffect } from "react";
-import MainImage from "../assets/main.jpg";
+import { useState} from "react";
 import pics from "../assets/JS Data/Gallery";
-import Styles from "../styles/Gallery.module.css";
 import SubGallery from "../components/SubGallery"
 import Gallery_component from "../components/Gallery_component";
 import { Typography } from "antd";
+
 const Gallery = () => {
         const [activeItem, setActiveItem] = useState(null);
         return(
@@ -21,14 +20,18 @@ const Gallery = () => {
         alignItems: "center",
       }}>
     {pics.map((item) => (
-            <div>
+            <div  onClick={() => {
+                setActiveItem(item);
+                // setIsModalOpen(true)
+              }}>{!activeItem &&
               <Gallery_component
                 Title={item.Title}
                 mainImg={item.mainImg}
                 key={item.Title}
-              />
+              />}
             </div>
           ))}
+        <div>{activeItem && <SubGallery Title={activeItem?.Title}/>}</div> 
         </div>
 
 

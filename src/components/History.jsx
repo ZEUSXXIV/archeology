@@ -13,7 +13,7 @@ export default function History(){
         </div>
         <p className={`${styles.content}`} style={{
                     fontSize: "16px",
-                    textAlign: "justify",
+                    textAlign: "center",
                 }}>To promote feeling of great pride of Goa’s Archaeological and cultural heritage and preservation of it for posterity.</p>
         
         <Typography className={`${styles.title}`} style={{
@@ -23,12 +23,12 @@ export default function History(){
                     paddingTop: "2%",
                     paddingBottom: "2%",
                 }}> Our Mission </Typography>
-           <ol className={`${styles.content}`} style={{
+           <div className={`${styles.content}`} style={{
                     fontSize: "16px",
-                    textAlign: "justify",
+                    textAlign: "center",
                 }} > 
-                <li>Acquire, Protect, Preserve, Conserve/Re store, Maintain and create awareness of the archaeological and historical wealth of the state.</li>
-                <li>Encouraging the public for the study of Goa’s History, Heritage & Archaeology.</li></ol>
+                <p>Acquire, Protect, Preserve, Conserve/Re store, Maintain and create awareness of the archaeological and historical wealth of the state.</p>
+                <p>Encouraging the public for the study of Goa’s History, Heritage & Archaeology.</p></div>
          <Typography className={`${styles.title}`} style={{
                     fontWeight: "600",
                     fontSize: "28px",

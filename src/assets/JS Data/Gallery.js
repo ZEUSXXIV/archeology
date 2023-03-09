@@ -4,8 +4,7 @@ export default[{
     Title:"Ruins of Brahmapuri, Ella in Tiswadi",
     mainImg:"",
     Images:[
-        {
-         name:"hint",   
+        {  
          loc:""   
         }
         ,{

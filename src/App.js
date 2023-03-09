@@ -12,16 +12,21 @@ import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import MonumentList from './pages/MonumentList'
 import Gallery from './pages/Gallery'
+import SubGallery from './components/SubGallery'
+
+
 
 const App = () => {
   return (
     <>
     <div 
     style={{
-      background: "rgb(176,137,84)",
-      background: "linear-gradient(0deg, rgba(176,137,84,1) 0%, rgba(255,255,255,1) 100%)",
+      background: "rgb(255,237,204)",
+      // background: "linear-gradient(0deg, rgba(176,137,84,1) 0%, rgba(255,255,255,1) 100%)",
       minHeight:'100vh'}}
     >
+
+    {/* <SubGallery/> */}
       
       <Router>
       <Navbar/>
@@ -32,6 +37,7 @@ const App = () => {
           <Route element={<About/>} exact path='/about-us' />
           <Route element={<MonumentList/>} exact path='/monument-list' />
           <Route element={<Gallery/>} exact path='/gallery' />
+          <Route element={<SubGallery/>} exact path='/subgallery' />
         </Routes>
       </Router>
     

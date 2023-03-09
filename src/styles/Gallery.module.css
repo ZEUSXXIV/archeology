@@ -12,6 +12,10 @@ background-color: white;
     
   
 }
+.monu:hover{
+    height: 400px;
+    inline-size: 52vh;
+}
 .container{
     display: flex;
     flex-direction: row;

@@ -18,9 +18,9 @@ export default function Protected() {
     <>
       <div
         style={{
-          background: "rgb(8,93,33)",
-          background:
-            "linear-gradient(0deg, rgba(8,93,33,1) 0%, rgba(232,251,217,1) 90%, rgba(255,255,255,1) 100%)",
+          background: "#eee",
+          // background:
+          //   "linear-gradient(0deg, rgba(8,93,33,1) 0%, rgba(232,251,217,1) 90%, rgba(255,255,255,1) 100%)",
         }}
       >
         {/* <h1 style={{textAlign:'center'}}>Protected Monuments</h1> */}
