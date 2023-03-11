@@ -12,9 +12,11 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-image-gallery": "^1.2.11",
+    "react-photo-album": "^2.0.3",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "read-more-react": "^1.0.10",
+    "simple-react-footer": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
