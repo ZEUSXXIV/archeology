@@ -331,7 +331,7 @@ export const List = [
     }, 
     { 
         sr: 34, 
-        site: "The Site of Kaivailya Math at Consua", 
+        site: "The Site of Kaivailyamath at Consua", 
         village: "Cortalim", 
         taluka: "Mormugao", 
         sno: "162", 
