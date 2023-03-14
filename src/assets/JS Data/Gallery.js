@@ -20,7 +20,7 @@ export default[{
     mainImg:"",
     Images:[
         {
-         name:"0",   
+         name:"0",
          loc:""   
         },
         {

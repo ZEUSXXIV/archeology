@@ -24,6 +24,7 @@ export default function Featured(){
         <div
         style={{
           background: "rgba(189,220,224,0.8)",
+    
           // background:
           //   "linear-gradient(0deg, rgba(139,170,174,1) 20%, rgba(255,255,255,1) 100%)",
         }}

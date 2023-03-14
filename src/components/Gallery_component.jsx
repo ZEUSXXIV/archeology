@@ -11,9 +11,9 @@ export default function Gallery_component(props) {
     
      <div className={`${Styles.container}`}>
       <div className={`${Styles.monu}`}>
-      <div>
+      <div style={{alignItems:"center",justifyContent:"center"}}>
             {props.mainImg}
-              <img src={MainImage} style={{borderRadius: '20',height:"250px",width:"300px"}} />
+              <img src={MainImage} style={{borderRadius: '20',height:"35vh",width:"43vh"}} />
       </div>
       <div className={`${Styles.label}`}>
               <Typography>{props.Title}</Typography>

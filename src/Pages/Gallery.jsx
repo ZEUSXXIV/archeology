@@ -22,8 +22,8 @@ const Gallery = () => {
     {pics.map((item) => (
             <div  onClick={() => {
                 setActiveItem(item);
-                // setIsModalOpen(true)
-              }}>{!activeItem &&
+                window.location.href="/subgallery/"+item.Id;
+              }}>{
               <Gallery_component
                 Title={item.Title}
                 mainImg={item.mainImg}
@@ -31,7 +31,7 @@ const Gallery = () => {
               />}
             </div>
           ))}
-        <div>{activeItem && <SubGallery Title={activeItem?.Title}/>}</div> 
+      
         </div>
 
 
