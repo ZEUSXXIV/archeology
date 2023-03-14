@@ -83,16 +83,16 @@ export default[{
     Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fcave%2bat%2bishwarbhat%2f%4015.45209583,74.0389399,7.72994392a,4891.49984191d,35y,332.34932255h,11.17530915t,0r%2fdata%3dCn0aUxJNCiUweDNiYmZhNTg4YmEwN2U0MTM6MHg2NTFmYzIxNGJmYjVmMmQ4GcGHt3MG4y5AIU64sp-gglJAKhJjYXZlIGF0IGlzaHdhcmJoYXQYAiABIiYKJAkV4cPD_fouQBFp0dzLhu8uQBmcx1dpwoJSQCF6xkIRM35SQCgC"
 
 },
+// {
+//     Id:"12",
+//     Title:"Fortress of Colvale, Colvale in Bardez ",
+//     Description:"Fort of Colvale, also known as St. Minguel Fort is located on the northern border of the Bardez Taluka, on the left bank of river Colvale.  This is complex of four forts namely St. Thom’e de Colvalle, Fort of St. Minguel Thivim, Nossa Senhora de Assumpsao de Thivim and Nossa Senhora de Livramento de Thivim in an area of about approximate 4.5 km in Colvale-Tivim region from Colvale upto the hill of Tivim all four of them were built in one line at different times for strategic reasons.\n Fort of Colvale was constructed by the Portuguese in 1635 A.D during the tenure of Viceroy Conde de Linhares as a barrier against the inroads and to safeguard the region from the attack of the Marathas and other enemies.  Year 1667 witnessed the battle between Shivaji and Portuguese at this Fort.  It was taken by the Bhonsles and recaptured by the Marquis de Lourical and after 17th century it was neglected and went to ruin.  Chapel of St. Minguel is in the vicinity of fort complex."
+//     ,Map:"https://maps.app.goo.gl/D5rGjFELfpkZQ6L88",
+//     Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2ffortress%2bof%2bcolvale%2f%4015.6349385,73.850622,27.35699756a,2324.25531833d,35y,244.13839335h,45t,0r%2fdata%3dCn4aVBJOCiUweDNiYmY5NGFlZmQxMjc5Yjk6MHg5ZWM0OTgzNDlkMzdkZjQ0GeBLPPslRS9AIa87gsBvdlJAKhNmb3J0cmVzcyBvZiBjb2x2YWxlGAIgASImCiQJ9wiTBZusLkARLckvXghcLkAZFmVhMfyNUkAh13xED5d8UkAoAg"
+
+// },
 {
     Id:"12",
-    Title:"Fortress of Colvale, Colvale in Bardez ",
-    Description:"Fort of Colvale, also known as St. Minguel Fort is located on the northern border of the Bardez Taluka, on the left bank of river Colvale.  This is complex of four forts namely St. Thom’e de Colvalle, Fort of St. Minguel Thivim, Nossa Senhora de Assumpsao de Thivim and Nossa Senhora de Livramento de Thivim in an area of about approximate 4.5 km in Colvale-Tivim region from Colvale upto the hill of Tivim all four of them were built in one line at different times for strategic reasons.\n Fort of Colvale was constructed by the Portuguese in 1635 A.D during the tenure of Viceroy Conde de Linhares as a barrier against the inroads and to safeguard the region from the attack of the Marathas and other enemies.  Year 1667 witnessed the battle between Shivaji and Portuguese at this Fort.  It was taken by the Bhonsles and recaptured by the Marquis de Lourical and after 17th century it was neglected and went to ruin.  Chapel of St. Minguel is in the vicinity of fort complex."
-    ,Map:"https://maps.app.goo.gl/D5rGjFELfpkZQ6L88",
-    Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2ffortress%2bof%2bcolvale%2f%4015.6349385,73.850622,27.35699756a,2324.25531833d,35y,244.13839335h,45t,0r%2fdata%3dCn4aVBJOCiUweDNiYmY5NGFlZmQxMjc5Yjk6MHg5ZWM0OTgzNDlkMzdkZjQ0GeBLPPslRS9AIa87gsBvdlJAKhNmb3J0cmVzcyBvZiBjb2x2YWxlGAIgASImCiQJ9wiTBZusLkARLckvXghcLkAZFmVhMfyNUkAh13xED5d8UkAoAg"
-
-},
-{
-    Id:"13",
     Title:"Cave at Aquem, Margao in Salcete.",
     Description:"This is a lateritic man-made cave of early medieval period. It is popularly known as ‘Pandava Ovreo’ (Cave of Pandava).  It has 3 openings and 2 large rooms; with pillars inside.  This rock-cut cave is rectangular in shape and is divided into 2 chambers.  On both the sides of the northern door there are simple windows (Gavaksha).  Inner chamber has peg holes and niches.\n The Chapel located next to this cave is popularly known as ‘Pandava Chapel’ after this cave (Pandava Cave)."
     ,Map:"https://maps.app.goo.gl/ndjXSPWYEkJswUtM8",
