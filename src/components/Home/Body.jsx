@@ -1,8 +1,17 @@
 import React from "react";
 import styles from "../../styles/Body.module.css";
 import Dummy from "../../assets/main.jpg";
+import { useSpring, animated } from "react-spring";
+import {Fade, Zoom} from "react-reveal";
+
 
 const Body = () => {
+  const props=useSpring({
+    from:{opacity:0},
+    to:{opacity:1},
+    //try to make it when you scroll down instead
+    config: {duration: 3000}
+  });
   return (
     <div className={styles.body}>
       <div className={styles.headerText}>
@@ -24,9 +33,12 @@ const Body = () => {
       </div>
 
     
-
+  
       <div className={styles.scale2SuccessService}>
         <div className={styles.scale2SuccessServices}>
+        {/* <animated.div style={props}> */}
+        {/* <Fade left> */}
+        <Zoom>
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
               <img src={Dummy} alt="profile" />
@@ -42,6 +54,9 @@ const Body = () => {
               </a>
             </div>
           </div>
+          {/* </Fade> */}
+          {/* </animated.div> */}
+          {/* <Fade right> */}
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
               <img src={Dummy} alt="profile" />
@@ -57,7 +72,8 @@ const Body = () => {
               </a>
             </div>
           </div>
-
+          {/* </Fade> */}
+          {/* <Fade left> */}
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
               <img src={Dummy} alt="profile" />
@@ -73,6 +89,8 @@ const Body = () => {
               </a>
             </div>
           </div>
+          {/* </Fade> */}
+          {/* <Fade right> */}
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
               <img src={require('../../assets/Chart.jpg')} alt="gear" />
@@ -91,11 +109,14 @@ const Body = () => {
               </a>
             </div>
           </div>
+          </Zoom>
+          {/* </Fade> */}
         </div>
       </div>
 
       <h1 className={styles.ourFeaturedHeading}>OUR FEATURED MONUMENTS</h1>
       <div className={styles.detailsRev}>
+        <Fade left duration={1200}>
         <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
           <h2 className={styles.detailsHeader}>
             Ruins of Brahmapuri, Ella in Tiswadi
@@ -120,7 +141,9 @@ const Body = () => {
         <div>
           <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
         </div>
+        </Fade>
       </div>
+      <Fade right duration={1200}>
       <div className={styles.details}>
         <div className={`${styles.detail} ${styles.knowMoreButtonLeft} `}>
           <h2 className={styles.detailsHeader}>
@@ -143,6 +166,8 @@ const Body = () => {
           <img src={Dummy} className={styles.ourServicesImage} alt="product" />
         </div>
       </div>
+      </Fade>
+      <Fade left duration={1200}>
       <div className={styles.detailsRev}>
         <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
           <h2 className={styles.detailsHeader}>
@@ -164,6 +189,8 @@ const Body = () => {
           <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
+      </Fade>
+      <Fade right duration={1200}>
       <div className={styles.details}>
         <div className={`${styles.detail} ${styles.knowMoreButtonLeft} `}>
           <h2 className={styles.detailsHeader}>
@@ -187,6 +214,8 @@ const Body = () => {
           <img src={Dummy} className={styles.ourServicesImage} alt="chart" />
         </div>
       </div>
+      </Fade>
+      <Fade left duration={1200}>
       <div className={styles.detailsRev}>
         <div className={`${styles.detail} ${styles.knowMoreButtonRight} `}>
           <h2 className={styles.detailsHeader}>
@@ -214,6 +243,7 @@ const Body = () => {
           <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
+      </Fade>
       <footer>
         
       </footer>
