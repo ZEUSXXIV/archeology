@@ -1,12 +1,7 @@
-import Styles from "../styles/Gallery.module.css";
+import Styles from "../styles/Gallery_component.module.css";
 import MainImage from "../assets/main.jpg";
-
-
 import { Button, Typography } from "antd";
-
-
 export default function Gallery_component(props) {
-  
   return (
     
      <div className={`${Styles.container}`}>

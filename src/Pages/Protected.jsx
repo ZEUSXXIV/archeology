@@ -8,13 +8,29 @@ import MainImage from "../assets/main.jpg";
 
 import Styles from "../styles/Modal.module.css";
 import { useEffect } from "react";
+import axios from "axios";
 
 export default function Protected() {
   const [activeItem, setActiveItem] = useState(null);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const [data, setData] = useState([])
+
+  useEffect(()=>{
+    console.log("Naveeeennn")
+    axios.get("http://localhost:5000/api/v1/monument").then((res, err)=>{
+
+    if(err){
+      console.log("err", err)
+    }
+
+      console.log(res.data)
+      setData(res.data)
+    })
+  },[])
   return (
+
     <>
       <div
         style={{
@@ -46,7 +62,7 @@ export default function Protected() {
           }}
         >
           {/* {monuElements} */}
-          {details.map((monu) => (
+          {/* {details.map((monu) => (
             <div
               onClick={() => {
                 setActiveItem(monu);
@@ -57,6 +73,26 @@ export default function Protected() {
               <Protected_Monument
                 Title={monu.Title}
                 Description={monu.Description}
+                Map={monu.Map}
+                Geo={monu.Geo}
+                setIsModalOpen={setIsModalOpen}
+                Image={monu.Image}
+                // setActiveItem={setActiveItem}
+              />
+            </div>
+          ))} */}
+
+{data.map((monu) => (
+            <div
+              onClick={() => {
+                setActiveItem(monu);
+                // setIsModalOpen(true)
+              }}
+              key={monu.Id}
+            >
+              <Protected_Monument
+                Title={monu.site}
+                Description={monu.description}
                 Map={monu.Map}
                 Geo={monu.Geo}
                 setIsModalOpen={setIsModalOpen}
