@@ -14,10 +14,9 @@ import Home from './pages/Home'
 import MonumentList from './pages/MonumentList'
 import Gallery from './pages/Gallery'
 import SubGallery from './components/SubGallery'
-import Ticket_booking from './pages/Ticket_booking'
 
-const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magni nisi laudantium deleniti repellendus incidunt odio consequuntur deserunt cum, obcaecati doloribus aliquid culpa voluptates architecto delectus dignissimos sunt voluptas dolore? Modi tempora voluptate error accusamus eum sequi ducimus asperiores quo voluptatibus, dicta cupiditate iure ea, repellat consectetur necessitatibus minus incidunt?";
-const title = "Archaeology";
+const description = "According to wikipedia, the cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.";
+const title = "Cats";
 const columns = [
   {
       title: "Resources",
@@ -73,7 +72,7 @@ const App = () => {
     <>
     <div 
     style={{
-      background:"#24262b",
+      background: "rgb(255,237,204)",
       // background: "linear-gradient(0deg, rgba(176,137,84,1) 0%, rgba(255,255,255,1) 100%)",
       minHeight:'100vh'}}
     >
@@ -90,35 +89,35 @@ const App = () => {
           <Route element={<MonumentList/>} exact path='/monument-list' />
           <Route element={<Gallery/>} exact path='/gallery' />
           <Route element={<SubGallery/>} exact path='/subgallery/:id' />
-          <Route element={<Ticket_booking/>} exact path='/ticket_booking' />
-
         </Routes>
       </Router>
    
 
  
   <SimpleReactFooter 
-    style={{marginTop:"0px"}}
     description={description} 
     title={title}
     columns={columns}
-    linkedin="linkedin"
-    facebook="fb"
-    twitter="twitter"
-    instagram="live"
-    youtube=""
+    linkedin="fluffy_cat_on_linkedin"
+    facebook="fluffy_cat_on_fb"
+    twitter="fluffy_cat_on_twitter"
+    instagram="fluffy_cat_live"
+    youtube="UCFt6TSF464J8K82xeA?"
+    pinterest="fluffy_cats_collections"
     copyright="black"
     iconColor="white"
     backgroundColor="#24262b"
     fontColor="white"
     copyrightColor="darkgrey"
     
-    
-      
  />
 
     
-    
+    {/* <Featured />
+    <Protected />
+    <Landing/>
+    <Card/>
+    <About /> */}
     </div>
     </>
   )
