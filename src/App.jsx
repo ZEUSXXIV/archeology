@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Card from './components/Card'
 import Landing from './components/Home/Landing'
 import Navbar from './components/Navbar'
+import Payment from './components/Payment'
 import Protected from './pages/Protected'
 import Featured from './pages/Featured'
 import SimpleReactFooter from "simple-react-footer";
@@ -19,6 +20,8 @@ import Ticket_Booking from './pages/Ticket_booking'
 import {List} from './assets/JS Data/List'
 
 import axios from 'axios'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
 const description = "According to wikipedia, the cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.";
 const title = "Cats";
@@ -106,7 +109,7 @@ const App = () => {
     {/* <SubGallery/> */}
       
       <Router>
-      <Navbar/>
+      {/* <Navbar/> */}
         <Routes>
           <Route element={<Home/>} exact path='/' />
           <Route element={<Featured/>} exact path='/featured-monuments' />
@@ -117,14 +120,19 @@ const App = () => {
 
           <Route element={<SubGallery/>} exact path='/subgallery/:id' />
 
+
           <Route element={<Ticket_Booking/>} exact path='/ticket_booking' />
+
+          <Route element={<Payment/>} exact path='/payment' />
+          <Route element={<Login/>} exact path='/login' />
+          <Route element={<SignUp/>} exact path='/signup' />
 
         </Routes>
       </Router>
    
 
  
-  <SimpleReactFooter 
+  {/* <SimpleReactFooter 
     description={description} 
     title={title}
     columns={columns}
@@ -140,7 +148,7 @@ const App = () => {
     fontColor="white"
     copyrightColor="darkgrey"
     
- />
+ /> */}
 
     
     {/* <Featured />
