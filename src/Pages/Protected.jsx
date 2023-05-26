@@ -29,6 +29,11 @@ export default function Protected() {
       setData(res.data)
     })
   },[])
+
+
+   
+
+
   return (
 
     <>
@@ -62,7 +67,11 @@ export default function Protected() {
           }}
         >
           {/* {monuElements} */}
+
           {/* {details.map((monu) => (
+
+          {data.map((monu) => (
+
             <div
               onClick={() => {
                 setActiveItem(monu);
@@ -71,8 +80,8 @@ export default function Protected() {
               key={monu.Id}
             >
               <Protected_Monument
-                Title={monu.Title}
-                Description={monu.Description}
+                Title={monu.site}
+                Description={monu.description}
                 Map={monu.Map}
                 Geo={monu.Geo}
                 setIsModalOpen={setIsModalOpen}
@@ -112,14 +121,14 @@ export default function Protected() {
       >
         <div className={`${Styles.monu}`}>
           <div className={`${Styles.components}`}>
-            <h3 className={`${Styles.title}`}>{activeItem?.Title}</h3>
+            <h3 className={`${Styles.title}`}>{activeItem?.site}</h3>
             <div>
               <img src={MainImage} className={`${Styles.img}`} />
             </div>
             <div>
               {/* <Typography maxLength={5}>{desp}</Typography> */}
               <div className={`${Styles.monu_para}`}>
-                {activeItem?.Description}
+                {activeItem?.description}
               </div>
               <div className={`${Styles.buttons}`}>
                 <button className={`${Styles.button}`}>

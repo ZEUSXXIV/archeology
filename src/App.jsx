@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from './components/Card'
 import Landing from './components/Home/Landing'
 import Navbar from './components/Navbar'
@@ -14,6 +14,11 @@ import Home from './pages/Home'
 import MonumentList from './pages/MonumentList'
 import Gallery from './pages/Gallery'
 import SubGallery from './components/SubGallery'
+
+import Ticket_Booking from './pages/Ticket_booking'
+import {List} from './assets/JS Data/List'
+
+import axios from 'axios'
 
 const description = "According to wikipedia, the cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat or a feral cat; the latter ranges freely and avoids human contact.";
 const title = "Cats";
@@ -67,7 +72,28 @@ const columns = [
   }
 ];
 
+
 const App = () => {
+
+    useEffect(()=>{
+      console.log("list", List)
+
+      // List.map((item)=>{
+
+      //   axios.post("http://localhost:5000/api/v1/monument",
+      //   item
+
+      // ).then((res)=>
+      // {
+      //   console.log("res==>>", res)
+      // })
+
+      // })
+
+      
+
+    },[])
+
   return (
     <>
     <div 
@@ -88,7 +114,11 @@ const App = () => {
           <Route element={<About/>} exact path='/about-us' />
           <Route element={<MonumentList/>} exact path='/monument-list' />
           <Route element={<Gallery/>} exact path='/gallery' />
+
           <Route element={<SubGallery/>} exact path='/subgallery/:id' />
+
+          <Route element={<Ticket_Booking/>} exact path='/ticket_booking' />
+
         </Routes>
       </Router>
    
