@@ -1,7 +1,6 @@
 export default[{
    
     Id:"1",
-    Image:"mainimg",
     Title:"Ruins of Brahmapuri, Ella in Tiswadi",
     Description:`This Site in Ella (Old Goa) \n was the settlement of learned Brahmins from ancient times called as ‘Brahmapuri’.  Shiva under the name “Gomanteshwar” is venerated here.  The original temple is reported to have been constructed in the 14th Century C.E.  It is believed that the ancient holy place of worship of Gomanteshwar was destroyed by the Bahamani Kings and the same was rebuilt by Madhava Mantri a minister of the Vijayanagar Empire.  A tank near the temple is known as Madhava Tirth.  This temple was again destroyed by the Portuguese during their conquest of Goa in early 16th Century C.E.   Now Madhav Tirth and a tank exist at this site alongwith a recently built temple.`
     ,Map:"https://maps.app.goo.gl/64J56VnYZqAByCAMA?g_st=iwb",
@@ -46,7 +45,7 @@ export default[{
     Id:"7",
     Title:"Casa de Polvora, Panelim in Tiswadi",
     Description:"‘CASA DE POLVORA’ or gunpowder factory was erected by the Viceroy Dom Francisco da Gama, which is mentioned in an inscription.\n It is the site of Portuguese artillery and mint and gun foundry where requirements of army and navy were manufactured."
-    ,Map:"",
+    ,Map:"https://goo.gl/maps/8nq97z4dHx7AUfy46",
     Geo:''
 },
 {
@@ -67,14 +66,14 @@ export default[{
     Id:"10",
     Title:"Chapel of St. Jeronimus, Madel Chodan in Tiswadi.",
     Description:"This 16th Century Chapel also known as ‘Compro’ is dedicated to St. Jeronimus.  It was a part of the then seminary of Chorao where spirituality and theology was taught.  This seminary existed until 1886 as is evident from the Lopes Mendes illustrations from 1886.  This Chapel is circular in shape with a dome at the top and pillared verandah around."
-    ,Map:"",
+    ,Map:"https://goo.gl/maps/MSwHW9f8ucf18rzQ9",
     Geo:""
 },
 {
     Id:"11",
     Title:"Site of Budha Statues, Colvale in Bardez",
     Description:"In 1930 Fr. Henry Heras excavated the site at Mushirvada Colvale and an image of Buddha was found here.  The image of Buddha is currently preserved at Heras Institute, Mumbai."
-    ,Map:"https://maps.app.goo.gl/QZ4WD6wVqRV6UZTbA",
+    ,Map:"https://goo.gl/maps/9ur6vybhBYonUQth8",
     Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fsite%2bof%2bbudha%2bstatues,%2bcolvale,bardez%2f%4015.23341485,74.03928057,5.46495976a,27675.99091203d,35y,72.12326701h,45.16114016t,360r%2fdata%3dCpABGmYSYAolMHgzYmJmYWQ4MGRkNTAyZGYxOjB4NGI2M2VmNDk0YWYxZjEyZhljzAKSVXouQCHZvGAmQIJSQColc2l0ZSBvZiBidWRoYSBzdGF0dWVzLCBjb2x2YWxlLGJhcmRlehgCIAEiJgokCYyaGnZ7ljNAEcylaQLwkDJAGXUQsU8TRlJAIYbrb9YoJFJA"
 },
 {
@@ -144,14 +143,14 @@ export default[{
     Id:"21",
     Title:"Site of ruins of Mangueshi Temple, Cortalim in Salcete",
     Description:"This is the site where the original temple of Mangesh was situated in village Cortalim, Taluka Salcete.  The temple was destroyed by the Portuguese in 16th Century and the deity was shifted to Priol village in Ponda Taluka."
-    ,Map:"",
+    ,Map:"https://goo.gl/maps/Ts3Ab27vVaYD8hXt5",
     Geo:""
 },
 {
     Id:"22",
     Title:"Site of ruins of Shantadurga temple, Quelossim in Salcete.",
     Description:"This is the original place of the temple of Shree Shantadurga which is shifted to Kavale in Ponda taluka after it was destroyed by the Portuguese in 1567.\n Ancient text ‘Sahyadrikhanda’ mentions about this deity and her temple at this site.  Archival records mention the grandeur of this temple and site prior to its destruction in the 16th Century."
-    ,Map:"https://maps.app.goo.gl/peKarZ9ftzDRCAfz5",
+    ,Map:"https://goo.gl/maps/dF3KbPz8d4JoUbbx9",
     Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fruins%2bof%2bshantadurga%2btemple,quelossim%2f%4015.60525696,73.93537447,33.11314985a,139361.34414276d,35y,23.53733742h,33.82564895t,0r%2fdata%3dCpABGmYSYAolMHgzYmJmYmEwMmQxNTAyYjhkOjB4NTA3MzJjNDFjYWM5NWY5MxnhZHZxdsYuQCFurHqvEHxSQColcnVpbnMgb2Ygc2hhbnRhZHVyZ2EgdGVtcGxlLHF1ZWxvc3NpbRgCIAEiJgokCVI2Hr8GwS9AEQ3AsBPo6C5AGWmom6YNjFJAIeaZTFHAcFJAKAI"
 },
 {
@@ -221,8 +220,8 @@ export default[{
     Id:"32",
     Title:" Cave at Khandepar, Khandepar in Ponda ",
     Description:"Situated on the banks of the Khandepar River, this is a four Monolithic, laterite-cut, cave temple complex. Scholars have dated these caves to the 11th Century.  A raised courtyard, in front of these caves displays three water storing cisterns, cut into the laterite. \nThree of these caves have 2-cells each, and the fourth cave, comprises a single cell, holding a ‘Shiva Linga’ on a ‘Yonipitha’ (base).  Shikhara’s (Roofs) are constructed above all the four cave roofs.  Exterior walls of these caves are simple and without any decoration.  The interior ceilings of these caves are decorated with laterite carved lotus motifs; while the doors show simple bands."
-    ,Map:"https://maps.app.goo.gl/s7n35BDgD25uSuVB7",
-    Geo:"https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fcave%2bat%2bkhandepar%2f%4015.47205677,74.03408295,11.86847565a,2092.85934545d,35y,-83.21782029h,66.8652653t,0r%2fdata%3dCnwaUhJMCiUweDNiYmZhNTU1MmU1NWJlMDU6MHhmZWY0NTE0NGI1YjJiNWY1GY3qdCDr8S5AIUNznUZaglJAKhFjYXZlIGF0IGtoYW5kZXBhchgBIAEiJgokCd84xpwaZy5AEWW89XwbQy5AGeLOudxWiFJAITasRk78hVJA"
+    ,Map:"https://goo.gl/maps/MxJdLGhKTe2KBGTSA",
+    Geo:""
 },
 {
     Id:"33",

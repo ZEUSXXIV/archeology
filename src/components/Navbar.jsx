@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // import ServicesDropdown from "./servicesDropdown";
 import { useState } from "react";
 import { BsList, BsX } from "react-icons/bs";
-import coppercodeswhitelogo from "../assets/logo.png";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [color, setColor] = useState("#28311b");
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const headerTextColor = () => "#185763";
 
-  const handleLogo = () => coppercodeswhitelogo;
+  const handleLogo = () => logo;
 
   return (
     <>
@@ -153,6 +153,16 @@ const Navbar = () => {
               <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
                 <a
                   style={{ color: headerTextColor(),marginRight: "10px", }}
+                  href="/ticket_booking"
+                  //target="_blank"
+                  rel="noreferrer"
+                >
+                  TICKET BOOKING
+                </a>
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                <a
+                  style={{ color: headerTextColor(),marginRight: "10px", }}
                   href="/about-us"
                   //target="_blank"
                   rel="noreferrer"
@@ -160,6 +170,7 @@ const Navbar = () => {
                   ABOUT US
                 </a>
               </motion.li>
+
             </ul>
           </div>
         </div>
@@ -190,21 +201,7 @@ const Navbar = () => {
           </a>
         </motion.div>
 
-        {/* {noline != "true" && (
-          <motion.div
-            className={styles.progress}
-            style={{
-              scaleX,
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              backgroundColor: headerTextColor(),
-              width: "100%",
-              transformOrigin: "0%",
-              height: "2px",
-            }}
-          />
-        )} */}
+     
       </div>
       <div 
       // style={{ height: "2px", backgroundColor: "blue" }}

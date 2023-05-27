@@ -1,14 +1,9 @@
+import Styles from "../styles/Officer.module.css";
 import { Typography } from "antd";
-
 export default function Officer(){
     return(
         <div >
-        <Typography style={{
-                    fontWeight: "600",
-                    fontSize: "28px",
-                    paddingTop: "2%",
-                    paddingBottom: "2%",
-                }}>Grievances handling Mechanism</Typography>
+        <Typography className={`${Styles.title}`}>Grievances handling Mechanism</Typography>
         <p>There may be occasions when our services will not be up to your expectations, please do not hesitate to register your grievances. It will only help us to serve you better.
             In order to readdress the grievances of the public we have designated public grievances officer:</p>
 
@@ -17,12 +12,7 @@ export default function Officer(){
                     Contact: 0832-2226692<br/>
                     (Public Grievance Officer)
                  </p>
-                 <Typography style={{
-                    fontWeight: "600",
-                    fontSize: "28px",
-                    paddingTop: "2%",
-                    paddingBottom: "2%",
-                }}>List of Officials</Typography>
+                 <Typography className={`${Styles.title}`}>List of Officials</Typography>
 
                 <p><b>Dr. Nilesh B. Fal Dessai</b><br/>
                     Director, Department of Archaeology<br/>
@@ -37,12 +27,7 @@ export default function Officer(){
                     Public Grievance Officer<br/>
                     Contact: 0832-222692</p>
 
-                    <Typography style={{
-                    fontWeight: "600",
-                    fontSize: "28px",
-                    paddingTop: "2%",
-                    paddingBottom: "2%",
-                }}>Public Information Officers</Typography>
+                    <Typography className={`${Styles.title}`}>Public Information Officers</Typography>
                     <p><b>Dr. Nilesh B. Fal Dessai</b><br/>
                     First Appellete Authority<br/>
                     Department of Archaeology<br/>

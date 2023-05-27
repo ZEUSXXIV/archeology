@@ -7,48 +7,36 @@ import { Modal, Typography } from "antd";
 import Styles from "../styles/ModalFeatured.module.css";
 import { useEffect } from "react";
 import MainImage from "../assets/main.jpg";
+import axios from "axios";
 
 export default function Featured(){
     const [activeItem, setActiveItem] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    /* const monuElements=featured.map(monu => {
-        return <Monument 
-        key={monu.Id}
-        Title={monu.Title} 
-        Description={monu.Description}
-        Map={monu.Map}
-        Geo={monu.Geo}/>
-    }) */
+
+    const [data, setData] = useState([])
+
+//     useEffect(()=>{
+
+// // console.log("nidhiiiiiii")
+
+//       axios.get("")
+
+//     },[])
+ 
      return(
         <>
         <div
         style={{
           background: "rgba(189,220,224,0.8)",
-    
-          // background:
-          //   "linear-gradient(0deg, rgba(139,170,174,1) 20%, rgba(255,255,255,1) 100%)",
         }}
         >
 
-        <Typography
-          style={{
-            fontWeight: "600",
-            fontSize: "36px",
-            textAlign: "center",
-            paddingTop: "2%",
-            paddingBottom: "2%",
-          }}
+        <Typography className={`${Styles.title}`}
         >
           Featured Monuments
         </Typography>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "15px",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+        <div className={`${Styles.container}`}
+         
         >
           {/* {monuElements} */}
           {featured.map((monu) => (
@@ -79,7 +67,7 @@ export default function Featured(){
     >
       <div className={`${Styles.monu}`}>
         <div className={`${Styles.components}`}>
-          <h3 className={`${Styles.title}`}>{activeItem?.Title}</h3>
+          <h3 className={`${Styles.sub_title}`}>{activeItem?.Title}</h3>
           <div>
             <img src={MainImage} className={`${Styles.img}`} />
           </div>
@@ -97,7 +85,7 @@ export default function Featured(){
 
               <button className={`${Styles.button}`}>
                 <a href={activeItem?.Geo} target="_blank">
-                  Geo
+                  Tour
                 </a>
               </button>
             </div>

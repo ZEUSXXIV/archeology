@@ -1,16 +1,16 @@
 import React from "react";
 import { useState} from "react";
 import pics from "../assets/JS Data/Gallery";
-import SubGallery from "../components/SubGallery"
 import Gallery_component from "../components/Gallery_component";
 import { Typography } from "antd";
+import Styles from "../styles/Gallery.module.css"
 
 const Gallery = () => {
         const [activeItem, setActiveItem] = useState(null);
         return(
   <>
-  
-    <Typography style={{fontWeight:'600', fontSize:'36px', textAlign:'center',paddingTop:'2%', paddingBottom:'2%'}} >Gallery</Typography>
+  <div style={{background:"rgb(255,237,204)"}}>
+    <Typography className={`${Styles.title}`} >Gallery</Typography>
    <div
    style={{
         display: "flex",
@@ -20,14 +20,14 @@ const Gallery = () => {
         alignItems: "center",
       }}>
     {pics.map((item) => (
-            <div  onClick={() => {
+            <div key={item.Title}  onClick={() => {
                 setActiveItem(item);
                 window.location.href="/subgallery/"+item.Id;
               }}>{
               <Gallery_component
                 Title={item.Title}
                 mainImg={item.mainImg}
-                key={item.Title}
+                key={item.Id}
               />}
             </div>
           ))}
@@ -35,36 +35,8 @@ const Gallery = () => {
         </div>
 
 
-      {/* <div >
-              <img src={MainImage} style={{borderRadius: '20',height:"250px",width:"300px"}} />
-      </div>
-      <div className={`${Styles.label}`}>
-              <Typography>Reis Magos Church</Typography>
-      </div>
-    </div>
-    <div className={`${Styles.monu}`}>
-      <div >
-              <img src={MainImage} style={{borderRadius: '20',height:"250px",width:"300px"}} />
-      </div>
-      <div className={`${Styles.label}`}>
-              <Typography>Reis Magos Church</Typography>
-      </div>
-    </div><div className={`${Styles.monu}`}>
-      <div >
-              <img src={MainImage} style={{borderRadius: '20',height:"250px",width:"300px"}} />
-      </div>
-      <div className={`${Styles.label}`}>
-              <Typography>Reis Magos Church</Typography>
-      </div>
-    </div><div className={`${Styles.monu}`}>
-      <div >
-              <img src={MainImage} style={{borderRadius: '20',height:"250px",width:"300px"}} />
-      </div>
-      <div className={`${Styles.label}`}>
-              <Typography>Reis Magos Church</Typography>
-      </div>
-    </div> */}
-   
+
+   </div>
   </>)
 };
 

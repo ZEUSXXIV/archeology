@@ -1,41 +1,7 @@
-.monu{
-    font-family: 'JosefinSans';
-background-color: white;
-    padding: 10px 25px;
-    inline-size: 50vh;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 380px;
-    flex: 1 0 0 0 300px;
-    margin-left: 15px;
-    justify-items: center;
-    align-items: center;
-    
-  
-}
-.monu:hover{
-    box-shadow:rgba(0, 0, 0, 0.24) 10px 10px 10px ;
-    
-}
-.container{
-    display: flex;
-    flex-direction: row;
-
-}
-/* .monu{
-    font-family: 'JosefinSans';
-    background-color: white;
-    inline-size: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    margin-left: 15px;
-    max-height: 200px;
-    
-    
-} */
-.label{
-    font-size: 1.5rem;
-    height: 80px;
-    margin: 3% 0px;
+.title{
+    font-weight:600;
+    font-size:36px;
+    text-align:center;
+    padding-top:2%; 
+    padding-bottom:2%;
 }
