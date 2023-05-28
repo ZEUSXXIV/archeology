@@ -9,33 +9,27 @@ import MainImage from "../assets/main.jpg";
 import Styles from "../styles/Modal.module.css";
 import { useEffect } from "react";
 import axios from "axios";
+import MonumentCard from "../components/MonumentCard/MonumentCard";
 
 export default function Protected() {
   const [activeItem, setActiveItem] = useState(null);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
-  useEffect(()=>{
-    console.log("Naveeeennn")
-    axios.get("http://localhost:5000/api/v1/monument").then((res, err)=>{
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/v1/monument").then((res, err) => {
+      if (err) {
+        console.log("err", err);
+      }
 
-    if(err){
-      console.log("err", err)
-    }
-
-      console.log(res.data)
-      setData(res.data)
-    })
-  },[])
-
-
-   
-
+      console.log(res.data);
+      setData(res.data);
+    });
+  }, []);
 
   return (
-
     <>
       <div
         style={{
@@ -66,12 +60,9 @@ export default function Protected() {
             alignItems: "center",
           }}
         >
-          {/* {monuElements} */}
-
-          {/* {details.map((monu) => (
+          {/* <MonumentCard /> */}
 
           {data.map((monu) => (
-
             <div
               onClick={() => {
                 setActiveItem(monu);
@@ -79,7 +70,7 @@ export default function Protected() {
               }}
               key={monu.Id}
             >
-              <Protected_Monument
+              {/* <Protected_Monument
                 Title={monu.site}
                 Description={monu.description}
                 Map={monu.Map}
@@ -87,27 +78,9 @@ export default function Protected() {
                 setIsModalOpen={setIsModalOpen}
                 Image={monu.Image}
                 // setActiveItem={setActiveItem}
-              />
-            </div>
-          ))} */}
+              /> */}
 
-{data.map((monu) => (
-            <div
-              onClick={() => {
-                setActiveItem(monu);
-                // setIsModalOpen(true)
-              }}
-              key={monu.Id}
-            >
-              <Protected_Monument
-                Title={monu.site}
-                Description={monu.description}
-                Map={monu.Map}
-                Geo={monu.Geo}
-                setIsModalOpen={setIsModalOpen}
-                Image={monu.Image}
-                // setActiveItem={setActiveItem}
-              />
+              <MonumentCard item={monu} />
             </div>
           ))}
         </div>

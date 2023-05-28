@@ -8,6 +8,7 @@ import Styles from "../styles/ModalFeatured.module.css";
 import { useEffect } from "react";
 import MainImage from "../assets/main.jpg";
 import axios from "axios";
+import MonumentCard from "../components/MonumentCard/MonumentCard";
 
 export default function Featured(){
     const [activeItem, setActiveItem] = useState(null);
@@ -22,6 +23,19 @@ export default function Featured(){
 //       axios.get("")
 
 //     },[])
+
+useEffect(()=>{
+  console.log("Naveeeennn")
+  axios.get("http://localhost:5000/api/v1/monumentfeatured").then((res, err)=>{
+
+  if(err){
+    console.log("err", err)
+  }
+
+    console.log(res.data)
+    setData(res.data)
+  })
+},[])
  
      return(
         <>
@@ -39,7 +53,7 @@ export default function Featured(){
          
         >
           {/* {monuElements} */}
-          {featured.map((monu) => (
+          {data.map((monu) => (
             <div
               onClick={() => {
                 setActiveItem(monu);
@@ -47,14 +61,15 @@ export default function Featured(){
               }}
               key={monu.Id}
             >
-              <Monument 
+              {/* <Monument 
                 key={monu.Id}
                 Title={monu.Title} 
                 Description={monu.Description}
                 Map={monu.Map}
                 Geo={monu.Geo}
                 setIsModalOpen={setIsModalOpen}
-                />
+                /> */}
+                <MonumentCard item={monu} />
             </div>
           ))}
         </div>
