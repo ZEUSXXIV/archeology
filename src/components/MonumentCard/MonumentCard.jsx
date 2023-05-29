@@ -63,9 +63,10 @@ const MonumentCard = ({ item }) => {
 
           <div style={{ display: "flex", flexDirection: "row",height:'25px' }}>
             <Rating
-              initialValue={parseInt(item.rating)}
+              initialValue={parseFloat(item.rating)}
               readonly={true}
               size={20}
+              allowFraction
             />
             <p className="h3">{item.rating}</p>
           </div>
