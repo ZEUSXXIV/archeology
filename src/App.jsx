@@ -27,6 +27,7 @@ import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
 
 import SimpleReactFooter from "simple-react-footer";
+import MonumentPage from "./pages/MonumentPage";
 
 const App = () => {
 
@@ -121,6 +122,8 @@ const App = () => {
           <Route element={<About />} exact path="/about-us" />
           <Route element={<MonumentList />} exact path="/monument-list" />
           <Route element={<Gallery />}  path="/gallery" />
+
+          <Route element={<MonumentPage/>} exact path="/monument/:id" />
 
           <Route element={<SubGallery />} exact path="/subgallery/:id" />
 
