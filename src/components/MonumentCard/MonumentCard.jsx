@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./MonumentCard.css";
 import { Rating } from "react-simple-star-rating";
 import Button from "./Button";
 import { Tag } from "antd";
+import axios from "axios";
 
 const MonumentCard = ({ item }) => {
   // const [rating, setRating] = useState(item.rating)
 
   var desp = item.description.slice(0, 100);
 
+
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+
+
+    console.log("id==>>", item._id)
+
+    axios.get(`http://localhost:5000/api/v1/gallery/${item._id}`).then((res, err) => {
+      if (err) {
+        console.log("err", err);
+      }
+
+      console.log(res.data);
+      setData(res.data[0]);
+    });
+  }, []);
+
   return (
     <>
       <div className="card">
-        <div className="img">
-          <div className="save">
+        <div className="img" style={{backgroundImage:`url('${data?.main_img}')`}} >
+          {/* <div className="save">
             <svg
               className="svg"
               width="683"
@@ -48,13 +67,13 @@ const MonumentCard = ({ item }) => {
                   />
                 </g>
               </g>
-              {/* <defs>
+              <defs>
               <clipPath id="clip0_993_25">
                 <rect width="682.667" height="682.667" fill="white" />
               </clipPath>
-            </defs> */}
+            </defs>
             </svg>
-          </div>
+          </div> */}
         </div>
 
         <div className="text">

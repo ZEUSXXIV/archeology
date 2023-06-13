@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "../styles/Ticket_Booking.module.css";
 import { useForm } from "react-hook-form";
 import { Carousel } from "react-responsive-carousel";
@@ -10,6 +10,8 @@ import Img02 from "../assets/Pics/04 St Monica old Goa.jpg";
 import Img03 from "../assets/Pics/37 Fort of Cabo de Rama, Cancona.jpg";
 import Img04 from "../assets/Pics/16 Church of Reis Magos.jpg";
 import "react-datepicker/dist/react-datepicker.css";
+
+import { Select, Space } from "antd";
 
 import { Swiper, SwiperSlide, Autoplay } from "swiper/react";
 import "swiper/css";
@@ -32,32 +34,60 @@ const Ticket_Booking = () => {
   } = useForm();
   const [value, setValue] = useState();
 
-  function saveData() {
+  const [Data, setData] = useState([]);
+
+
+  const [selectedMonumentId, setSelectedMonumentId] = useState(null)
+
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
+    setSelectedMonumentId(value)
+  };
+
+  useEffect(() => {
+    axios.get(`http://localhost:5000/api/v1/monument`).then((res) => {
+      console.log(res.data);
+      let temp = []
+      res.data.map((item)=>{
+        temp.push({
+          value: item._id,
+          label: item.site
+        })
+      })
+
+      setData(temp);
+
+    });
+
+    
+
+  }, []);
+
+ async function  saveData () {
     // console.log("data==>>",data);
 
     const req = {
+      uid: await localStorage.getItem("user-token"),
       name: value.name,
       phone: value.contact,
       email: value.email,
       date: value.date,
       tickets: parseInt(value.ticket),
-      monument_id: 1,
+      monument_id: selectedMonumentId,
       isActive: 1,
       status: "ongoing",
     };
 
     console.log("req==>>", req);
 
-    axios
-      .post("http://localhost:5000/api/v1/ticket", req)
-      .then((res, err) => {
-        if (err) {
-          console.log("err", err);
-        }
+    axios.post("http://localhost:5000/api/v1/ticket", req).then((res, err) => {
+      if (err) {
+        console.log("err", err);
+      }
 
-        console.log(res.data);
-        // setData(res.data)
-      });
+      console.log(res.data);
+      // setData(res.data)
+    });
   }
   return (
     <div className={`${Styles.Container}`}>
@@ -116,11 +146,20 @@ const Ticket_Booking = () => {
         <label className={`${Styles.Label}`}>
           Site <Error errors={errors.site} />
         </label>
-        <input
+        {/* <input
           className={`${Styles.FormItem}`}
           name="site"
           {...register("site", { required: "*Details Required" })}
-        ></input>
+        ></input> */}
+
+        <Select
+          defaultValue={Data[0]?.label}
+          style={{
+            width: "80%",
+          }}
+          onChange={handleChange}
+          options={Data}
+        />
 
         <button
           className={`${Styles.Button}`}
@@ -167,9 +206,10 @@ const Ticket_Booking = () => {
           <p>Name: {value?.name}</p>
           <p>Contact: {value?.contact}</p>
           <p>Email ID: {value?.email}</p>
-          <p>Date: {value?.date}</p>
+          <p>Date: {value?.date}</p> 
           <p>Tickets: {value?.ticket}</p>
-          <p>Site: {value?.site}</p>
+          {/* {console.log("filter==>>",Data.filter((item)=> selectedMonumentId === item.value  ))} */}
+          <p>Site: { Data.filter((item)=> selectedMonumentId === item.value  )[0]?.label }</p>
         </div>
         <div className={`${Styles.modalbutton}`}>
           <button
