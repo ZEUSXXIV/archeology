@@ -80,7 +80,7 @@ export default function Protected() {
                 // setActiveItem={setActiveItem}
               /> */}
 
-              <MonumentCard item={monu} />
+              <MonumentCard item={monu}/>
             </div>
           ))}
         </div>

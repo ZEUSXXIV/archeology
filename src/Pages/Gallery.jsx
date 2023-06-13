@@ -9,6 +9,7 @@ import axios from "axios";
 const Gallery = () => {
         const [activeItem, setActiveItem] = useState(null);
         const [data,setData]=useState([])
+        console.log("gallery");
         useEffect(() => {
           axios.get("http://localhost:5000/api/v1/gallery").then((res, err) => {
             if (err) {

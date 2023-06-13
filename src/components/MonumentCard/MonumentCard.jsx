@@ -7,7 +7,6 @@ import axios from "axios";
 
 const MonumentCard = ({ item }) => {
   // const [rating, setRating] = useState(item.rating)
-
   var desp = item.description.slice(0, 100);
 
 
