@@ -68,6 +68,8 @@ function Payment({saveData}) {
                 const result = await axios.post("http://localhost:5000/payment/success", data);
 
                 alert(result.data.msg);
+
+                window.location.href = "/"
             },
             prefill: {
                 name: "Frutika",
