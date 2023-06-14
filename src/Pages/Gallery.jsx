@@ -18,7 +18,7 @@ const Gallery = () => {
       
             console.log(res.data);
             let temp=res.data.filter((item)=> {
-              if(item.main_img === "")
+              if(item.main_img !== "")
               return item
             })
 

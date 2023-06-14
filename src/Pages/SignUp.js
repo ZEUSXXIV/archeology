@@ -5,6 +5,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -26,6 +27,7 @@ const app = initializeApp(firebaseConfig);
 
 const SignUp = () => {
   const auth = getAuth();
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -37,6 +39,18 @@ const SignUp = () => {
         // Signed in
         const user = userCredential.user;
         console.log("user=>", user)
+
+        const token = user.accessToken;
+        const user_id = user.uid;
+        if (!token) {
+            alert('Unable to login. Please try after some time.');
+            return;
+        }
+        localStorage.clear();
+        localStorage.setItem('user-token', token);
+        setTimeout(() => {
+            navigate('/ticket_booking');
+        }, 1000);
         // ...
       })
       .catch((error) => {
@@ -89,7 +103,7 @@ const SignUp = () => {
       </form>
       <p>
         Already have an account?{" "}
-        <a href="./login" class="a2">
+        <a href="/login" class="a2">
           Login!
         </a>
       </p>

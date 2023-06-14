@@ -31,13 +31,13 @@ import Navbar from "./components/Navbar";
 import SimpleReactFooter from "simple-react-footer";
 import MonumentPage from "./pages/MonumentPage";
 
-const App = () => {
+const App =  () => {
   ReactGA.initialize('UA-273414908-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
 
   console.log("location==>>", window.location.href)
   const [isLoggedIn, setIsLoggedIn] = useState(
-    localStorage.getItem("user-token")
+     localStorage.getItem("user-token")
   );
     
   const Layout = () => {
@@ -133,11 +133,14 @@ const App = () => {
           <Route
             path="/ticket_booking"
             element={
-              isLoggedIn ? (
+              // isLoggedIn ?
+              (
                 <Ticket_Booking />
-              ) : (
-                <Navigate to="/login" replace={true} />
-              )
+              ) 
+              
+              // : (
+              //   <Navigate to="/login" replace={true} />
+              // )
             }
           />
 
