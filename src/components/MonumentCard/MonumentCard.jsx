@@ -4,6 +4,7 @@ import { Rating } from "react-simple-star-rating";
 import Button from "./Button";
 import { Tag } from "antd";
 import axios from "axios";
+import Inf from "../../assets/inf.jpg"
 
 const MonumentCard = ({ item }) => {
   // const [rating, setRating] = useState(item.rating)
@@ -30,7 +31,7 @@ const MonumentCard = ({ item }) => {
   return (
     <>
       <div className="card">
-        <div className="img" style={{backgroundImage:`url('${data?.main_img}')`}} >
+        <div className="img" style={{backgroundImage:data?.main_img == "" ? Inf :`url('${data?.main_img}')`}} >
           {/* <div className="save">
             <svg
               className="svg"

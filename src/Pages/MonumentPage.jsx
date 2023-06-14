@@ -2,14 +2,14 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import Dummy from "./try.jpg";
+import Inf from "../assets/inf.jpg";
 
 import styles from "../styles/MonumentPage.module.css";
 import { Col, Row, Tag, Typography } from "antd";
 
 import { Rating } from "react-simple-star-rating";
 import HoverButton from "../components/HoverButton/HoverButton";
-import MonumentCard from "../components/MonumentCard/MonumentCard";
+import RecommendCard from "../components/RecommendCard/RecommendCard";
 
 const { Title } = Typography;
 
@@ -20,6 +20,8 @@ const MonumentPage = () => {
 
   const [recommendations, setRecommendations] = useState([]);
 
+  const [mainImage, setMainImage] = useState("")
+
   let temp = [];
 
   useEffect(() => {
@@ -28,11 +30,19 @@ const MonumentPage = () => {
       .then((res, err) => {
         if (err) {
           console.log("err", err);
+          return
         }
-
-        // console.log(res.data[0]);
-        // console.log(parseFloat(res.data[0].rating));
         setData(res.data[0]);
+      });
+
+      axios
+      .get(`http://localhost:5000/api/v1/gallery/${id}`)
+      .then((res, err) => {
+        if (err) {
+          console.log("err", err);
+          return
+        }
+        setMainImage(res.data[0].main_img)
       });
 
       axios
@@ -43,95 +53,28 @@ const MonumentPage = () => {
         }
         console.log("response", res.data.response);
 
-        res.data.response.map((item) => {
-          axios
-            .get(`http://localhost:5000/api/v1/monument/${item}`)
-            .then((res, err) => {
-              if (err) {
-                console.log("err", err);
-              }
-
-              console.log("response==>>>", res.data[0]);
-              temp.push(res.data[0]);
-            });
-
-          console.log("temp", temp);
-
-          
+      axios
+      .get(`http://localhost:5000/api/v1/monument`)
+      .then((resp, err) => {
+        if (err) {
+          console.log("err", err);
+          return
+        }
+        console.log("resp==>>", resp);
+        let recommended = resp.data?.filter((item)=>{
+          if(res.data.response[0] == item._id || res.data.response[1] == item._id || res.data.response[2] == item._id || res.data.response[3] == item._id){
+            return item
+          }
         })
 
-        setRecommendations(temp);
-        console.log(recommendations);
+        console.log("recommendations==>>", recommended)
+        setRecommendations(recommended)
+      });
 
-        // setRecommendations(res.data.response)
+
       })
 
-                      
-
-                  //     res.data.response.map(async(item)=>{
-
-                  //       const response = await axios.get(`http://localhost:5000/api/v1/monument/${item}`)
-
-                  //       console.log("response==>>", response.data[0])
-
-                  //       temp.push(response.data[0])
-
-                  //     })
-
-        
-
-
-                  // let temp = [];
-
-                  // res.data.response.map((item) => {
-                  //   axios
-                  //     .get(`http://localhost:5000/api/v1/monument/${item}`)
-                  //     .then((res, err) => {
-                  //       if (err) {
-                  //         console.log("err", err);
-                  //       }
-
-                  //       console.log("response==>>>", res.data[0]);
-                  //       temp.push(res.data[0]);
-                  //     });
-
-                  //   console.log("temp", temp);
-
-                  //   setRecommendations(temp);
-                    // temp != [] ? setRecommendations(temp) : null
-                  // });
-      // });
-
-      // setRecommendations(temp);
   }, []);
-
-  // useEffect(()=>{
-
-  //   axios
-  //   .get(`http://localhost:5000/api/v1/recommend/monument/${id}`)
-  //   .then((res, err) => {
-  //     if (err) {
-  //       console.log("err", err);
-  //     }
-  //     console.log("response", res.data.response);
-
-      
-
-  //     res.data.response.map(async(item)=>{
-
-  //       const response = await axios.get(`http://localhost:5000/api/v1/monument/${item}`)
-
-  //       console.log("response==>>", response.data[0])
-
-  //       temp.push(response.data[0])
-
-  //     })
-  //   })
-
-
-
-
-  // },[data])
 
 
   return (
@@ -146,7 +89,7 @@ const MonumentPage = () => {
         <Col span={22}>
           <Row justify="center" align="center">
             <Col span={12}>
-              <img src={Dummy} style={{ width: "100%", height: "100%" }} />
+              <img src={mainImage == "" ? Inf : mainImage} style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col span={10} offset={2}>
               <Title level={2}>{data.site}</Title>
@@ -181,7 +124,7 @@ const MonumentPage = () => {
                 Visiting time -{" "}
                 {data.visitingTime !== "" ? data.visitingTime : "Not Specified"}
               </Title>
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex", justifyContent:'space-between' }}>
                 <HoverButton title="Maps" link={`https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`} />
                 <HoverButton title="Geo" link={`https://earth.google.com/web/@${data.latitude},${data.longitude},0a,1000d,35y,0h,0t,0r/data=CigiJgokCU8Vv8L1RnxKBahDkBJwYICABIA`} />
               </div>
@@ -192,28 +135,30 @@ const MonumentPage = () => {
       </Row>
       {/* {recommendations.map((item)=> <h1>{item.site}</h1>)} */}
 
-      {/* { recommendations[0]?.site && <MonumentCard item={recommendations[0]} /> */}
+      {/* { recommendations[0]?.site && <RecommendCard item={recommendations[0]} /> */}
 
-
-
-      {/* <div
+      <Row justify="center" style={{marginTop:'5%',marginBottom:'3%'}}>          
+      <Title level={2}>Recommendations For You</Title>
+      </Row>
+      <div
         style={{
           display: "flex",
           flexWrap: "wrap",
           gap: "15px",
           justifyContent: "center",
           alignItems: "center",
+          
         }}
       >
         {recommendations.map((monu) => {
           console.log("monu==>>", monu);
           return (
             <div key={monu.site}>
-              <MonumentCard item={monu} />
+              <RecommendCard item={monu} />
             </div>
           );
         })}
-      </div> */}
+      </div>
     </>
   );
 };

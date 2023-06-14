@@ -1,13 +1,16 @@
-import React from 'react'
-import './HoverButton.css'
+import React from "react";
+import "./HoverButton.css";
 
-const HoverButton = ({title, link}) => {
+const HoverButton = ({ title, link }) => {
   return (
-<button onClick={()=> console.log("link==>>", link) } class="btn_center">
-    {title}
-</button>
+    <a href={link} target="_blank" >
+    <button 
+    onClick={() => console.log("link==>>", link)}
+    class="btn_center">
+      {title}
+    </button>
+    </a>
+  );
+};
 
-  )
-}
-
-export default HoverButton
+export default HoverButton;
