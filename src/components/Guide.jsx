@@ -3,6 +3,7 @@ import React from "react"
 import Officer from './Officer'
 import History from './History'
 import Image from "../assets/Chart.jpg";
+import ReactGA from "react-ga";
 import { Typography, Button } from "antd";
 export default function Guide(){
 
@@ -13,7 +14,8 @@ const [state,setState]=React.useState({
     })
     
     function handleChange(event){
-         
+        
+        handleButtonClick(); 
         setState(prevValue=>({
             history:false,
             officers:false,
@@ -22,6 +24,13 @@ const [state,setState]=React.useState({
           
          }))
      }
+     const handleButtonClick = () => {
+        ReactGA.event({
+          category: 'Division',
+          action: 'Button Click',
+          label: 'Button Label', 
+        });
+      };
     return(
             <div className={`${styles.guide}`}>
                 <Typography
@@ -35,7 +44,8 @@ const [state,setState]=React.useState({
                 >
                 About Us
                 </Typography>
-                <div className={`${styles.buttons}`}> <button style={{marginRight: "10px"}} name="history"  className="" onClick={handleChange}>Introduction</button>
+                <div className={`${styles.buttons}`}> 
+                <button style={{marginRight: "10px"}} name="history"  className="" onClick={handleChange}>Introduction</button>
                 <button style={{marginRight: "10px"}} name="officers" className="" onClick={handleChange}>Officers</button>
                 <button name="chart" className="" onClick={handleChange}>Chart</button></div>
                 <div className={`${styles.history_text}`}>{state.history && <History/>}</div> 
