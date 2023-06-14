@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga"
 import { useState } from "react";
 import details from "../assets/JS Data/Protected";
 import Protected_Monument from "../components/Protected_Monument";

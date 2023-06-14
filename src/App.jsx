@@ -34,12 +34,18 @@ import MonumentPage from "./pages/MonumentPage";
 const App = () => {
   ReactGA.initialize('UA-273414908-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
+  
 
   console.log("location==>>", window.location.href)
   const [isLoggedIn, setIsLoggedIn] = useState(
     localStorage.getItem("user-token")
   );
     
+  // const PageView=()=>{
+  //   const [pageviews, setPageviews] = useState(0);
+  //   setPageviews((prevPageviews) => prevPageviews + 1);
+  //   console.log("pageviews=>",pageviews);
+  // }
   const Layout = () => {
     const Footer = () => {
       const description =
