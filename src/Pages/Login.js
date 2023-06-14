@@ -48,8 +48,8 @@ const Login = () => {
         localStorage.clear();
         localStorage.setItem('user-token', token);
         setTimeout(() => {
-            navigate('/');
-        }, 500);
+            navigate('/ticket_booking');
+        }, 1000);
         // ...
       })
       .catch((error) => {
@@ -81,7 +81,7 @@ const Login = () => {
       </form>
       <p>
         Don't have an account?{" "}
-        <a href="./signup" class="a2">
+        <a href="/signup" class="a2">
           Sign up!
         </a>
       </p>

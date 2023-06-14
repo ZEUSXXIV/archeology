@@ -10,12 +10,14 @@ import Img02 from "../assets/Pics/04 St Monica old Goa.jpg";
 import Img03 from "../assets/Pics/37 Fort of Cabo de Rama, Cancona.jpg";
 import Img04 from "../assets/Pics/16 Church of Reis Magos.jpg";
 import "react-datepicker/dist/react-datepicker.css";
+import { useNavigate } from "react-router-dom";
 
 import { Select, Space } from "antd";
 
 import { Swiper, SwiperSlide, Autoplay } from "swiper/react";
 import "swiper/css";
 import axios from "axios";
+import Payment from "../components/Payment";
 
 export function Error({ errors }) {
   return (
@@ -25,6 +27,8 @@ export function Error({ errors }) {
   );
 }
 const Ticket_Booking = () => {
+
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const {
     register,
@@ -39,12 +43,23 @@ const Ticket_Booking = () => {
 
   const [selectedMonumentId, setSelectedMonumentId] = useState(null)
 
+
+
   const handleChange = (value) => {
     console.log(`selected ${value}`);
     setSelectedMonumentId(value)
   };
 
-  useEffect(() => {
+  useEffect(async() => {
+
+    const status = await localStorage.getItem("user-token")
+    console.log("status==>>",status)
+    if(status == null){
+      // navigate('/login');
+      window.location.href = "/login"
+      return
+    }
+
     axios.get(`http://localhost:5000/api/v1/monument`).then((res) => {
       console.log(res.data);
       let temp = []
@@ -212,15 +227,16 @@ const Ticket_Booking = () => {
           <p>Site: { Data.filter((item)=> selectedMonumentId === item.value  )[0]?.label }</p>
         </div>
         <div className={`${Styles.modalbutton}`}>
-          <button
+          {/* <button
             style={{ backgroundColor: "green" }}
             onClick={() => {
               saveData();
-              // window.location.href="/"
+              window.location.href="/"
             }}
           >
             Confirm
-          </button>
+          </button> */}
+          <Payment saveData={saveData}/>
           <button
             style={{ backgroundColor: "red" }}
             onClick={() => setIsModalOpen(false)}

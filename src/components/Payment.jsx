@@ -6,9 +6,7 @@ import React from "react";
 import axios from "axios";
 import { Button } from "antd";
 
-function Payment(
-    // {price}
-    ) {
+function Payment({saveData}) {
 
         const price = 100
 
@@ -27,6 +25,7 @@ function Payment(
     }
 
     async function displayRazorpay() {
+        saveData();
         const res = await loadScript(
             "https://checkout.razorpay.com/v1/checkout.js"
         );
@@ -69,6 +68,8 @@ function Payment(
                 const result = await axios.post("http://localhost:5000/payment/success", data);
 
                 alert(result.data.msg);
+
+                window.location.href = "/"
             },
             prefill: {
                 name: "Frutika",
@@ -88,14 +89,27 @@ function Payment(
     }
 
     return (
-        <div >
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                {/* <p>Buy React now!</p> */}
-                <Button className="App-link" variant="outlined" onClick={displayRazorpay}>
-                    Pay ₹{price}
-                </Button>
-        </div>
+        <button
+        style={{ backgroundColor: "green" }}
+        className="App-link" variant="outlined" onClick={displayRazorpay}
+      >
+        Confirm
+      </button>
+        // <div >
+
     );
 }
 
 export default Payment;
+
+                {/* <img src={logo} className="App-logo" alt="logo" /> */}
+                {/* <p>Buy React now!</p> */}
+                {/* <Button style={{ backgroundColor: "green"}} className="App-link" variant="outlined" onClick={displayRazorpay}>
+                   Confirm
+                </Button> */}
+                 {/* <button
+            
+            className="App-link" variant="outlined" onClick={displayRazorpay}>
+            Confirm
+          </button> */}
+        {/* </div> */}
