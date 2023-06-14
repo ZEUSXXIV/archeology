@@ -17,6 +17,7 @@ import { Select, Space } from "antd";
 import { Swiper, SwiperSlide, Autoplay } from "swiper/react";
 import "swiper/css";
 import axios from "axios";
+import Payment from "../components/Payment";
 
 export function Error({ errors }) {
   return (
@@ -226,15 +227,16 @@ const Ticket_Booking = () => {
           <p>Site: { Data.filter((item)=> selectedMonumentId === item.value  )[0]?.label }</p>
         </div>
         <div className={`${Styles.modalbutton}`}>
-          <button
+          {/* <button
             style={{ backgroundColor: "green" }}
             onClick={() => {
               saveData();
-              // window.location.href="/"
+              window.location.href="/"
             }}
           >
             Confirm
-          </button>
+          </button> */}
+          <Payment saveData={saveData}/>
           <button
             style={{ backgroundColor: "red" }}
             onClick={() => setIsModalOpen(false)}

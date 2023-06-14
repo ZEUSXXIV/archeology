@@ -1,0 +1,417 @@
+{
+    "Sites":[
+        {
+            "name":"Ruins of Brahmapuri, Ella in Tiswadi",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":["Antiquity","Temple"],
+            "latitude":"15.490364907705262",
+            "longitude":"73.91671190385779",
+            "rating":"4.6"
+        },
+        {
+            "name":"Chapel of St. Xavier, Ella in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Chapel",
+            "latitude":"15.500946566676147",
+            "longitude":"73.91930485573607",
+            "rating":"4.5"
+        },
+        {
+            "name":"Chapel of Our Lady of Monte, Ella in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Chapel",
+            "latitude":"15.504654776379818",
+            "longitude":"73.923676047007",
+            "rating":"3.9"
+        },
+        {
+            "name":"Ruins of College of St. Populo, Ella in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Antiquity",
+            "latitude":"15.498918278984261",
+            "longitude":"73.90672133400643",
+            "rating":"4.5"
+        },{
+            "name":"Convent of St. Monica & Chapel, Ella in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Chapel",
+            "latitude":"15.502217127294708",
+            "longitude":"73.90687132939053",
+            "rating":"4.6"
+        },{
+            "name":"Church of St. Peter, Ella in Tiswadi",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Church",
+            "latitude":"15.50762982846258",
+            "longitude":"73.89556145721643",
+            "rating":"4.3"
+        },{
+            "name":"Casa de Polvora, Panelim in Tiswadi",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Antiquity",
+            "latitude":"15.503014577858885",
+            "longitude":"73.91032835498324",
+            "rating":"4.3"
+        },{
+            "name":"Fort of Naroa, Diwadi in Tiswadi .",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Fort",
+            "latitude":"15.52987783337101",
+            "longitude":"73.92485362416882",
+            "rating":"4"
+        },{
+            "name":"Site of Temple of Saptakoteswara, Naroa, Diwadi in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Temple",
+            "latitude":"15.533225129148185",
+            "longitude":"73.9256260798333",
+            "rating":"4.4"
+        },{
+            "name":"Chapel of St. Jeronimus, Madel Chodan in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Chapel",
+            "latitude":"15.53554459141244",
+            "longitude":"73.87923334987155",
+            "rating":"4.4"
+        },{
+            "name":"Site of Budha Statues, Colvale in Bardez",
+            "district":"North",
+            "taluka":"Bardez",
+            "type":"Temple",
+            "latitude":"15.665083991273239",
+            "longitude":"73.72703231799618",
+            "rating":"5"
+        },{
+            "name":"Fortress of Colvale, Colvale in Bardez ",
+            "district":"North",
+            "taluka":"Bardez",
+            "type":"Fort",
+            "latitude":"15.62876602664993",
+            "longitude":"73.85444883896503",
+            "rating":"3.5"
+        },{
+            "name":"Fort of Reis Magos, Reis Magos in Bardez",
+            "district":"North",
+            "taluka":"Bardez",
+            "type":"Fort",
+            "latitude":"15.496670222151126",
+            "longitude":"73.80909059593297",
+            "rating":"4.4"
+        },{
+            "name":"Church of Reis Magos, Reis Magos in Bardez",
+            "district":"North",
+            "taluka":"Bardez",
+            "type":"Church",
+            "latitude":"15.498321221681792",
+            "longitude":"73.80931687967094",
+            "rating":"4.5"
+        },{
+            "name":"Fort of Chapora, Caisua in Bardez",
+            "district":"North",
+            "taluka":"Bardez",
+            "type":"Fort",
+            "latitude":"15.604854485874895",
+            "longitude":" 73.73694163717698",
+            "rating":"4.2"
+        },{
+            "name":"Temple of Saptakoteswar, Narve in Bicholi",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":"Temple",
+            "latitude":"15.552871202933947",
+            "longitude":"73.93201254306435",
+            "rating":"4.7"
+        },{
+            "name":"Caves at Naroa.",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":"Cave",
+            "latitude":"15.569842094907214",
+            "longitude":"73.93739900438631",
+            "rating":"3"
+        },{
+            "name":"Site of Gujir, Kudne in Dicholi",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":["Antiquity","Temple"],
+            "latitude":"15.545327177386554",
+            "longitude":"74.00741347301572",
+            "rating":"3.5"
+        },{
+            "name":"Fortress of Sankhali, Sankhali in Dicholi",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":"Fort",
+            "latitude":"15.563753866511746",
+            "longitude":"74.00710125915504",
+            "rating":"4"
+        },{
+            "name":"Namazgah, in Dicholi",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":"Mosque",
+            "latitude":"15.582543160988994",
+            "longitude":"73.94604199299674",
+            "rating":"4.4"
+        },{
+            "name":"Site of ruins of Mangueshi Temple, Cortalim in Salcete",
+            "district":"South",
+            "taluka":"Salcete",
+            "type":["Antiquity","Temple"],
+            "latitude":"15.390356278339606",
+            "longitude":" 73.92156148577669",
+            "rating":"4.3"
+        },{
+            "name":"Site of ruins of Shantadurga temple, Quelossim in Salcete.",
+            "district":"South",
+            "taluka":"Salcete",
+            "type":["Antiquity","Temple"],
+            "latitude":"15.39154155290822",
+            "longitude":"73.93939043214294",
+            "rating":"4.5"
+        },{
+            "name":"Site of Ramnath Temple, Loutolim in Salcete",
+            "district":"South",
+            "taluka":"Salcete",
+            "type":"Temple",
+            "latitude":"15.345689703922005",
+            "longitude":"73.98011583805975",
+            "rating":"4.5"
+        },{
+            "name":"Ruins including Tank of the Temple of Mahalasa, Verna in Salcete.",
+            "district":"South",
+            "taluka":"Salcete",
+            "type":["Antiquity","Temple"],
+            "latitude":"15.359560300286017",
+            "longitude":"73.94414225674963",
+            "rating":"5"
+        },{
+            "name":"Gate of Rachol Fortress, Rachol in Salcete.",
+            "district":"South",
+            "taluka":"Salcete",
+            "type":"Fort",
+            "latitude":"15.308753348290312",
+            "longitude":" 74.00087553717091",
+            "rating":"4.3"
+        },{
+            "name":"Cave at Aquem, Margao in Salcete.",
+            "district":"South",
+            "taluka":"Salcete",
+            "type":"Cave",
+            "latitude":"15.272726784033937",
+            "longitude":"73.97075277949834",
+            "rating":"3.8"
+        },{
+            "name":"Frontispiece of Sancoale Church, Sancoale in Mormugao.",
+            "district":"South",
+            "taluka":"Mormugao",
+            "type":"Church",
+            "latitude":"15.4066022511536",
+            "longitude":"73.89318235251675",
+            "rating":"4.4"
+        },{
+            "name":"Shri Chandreshwar at Paroda, Paroda in Quepem.",
+            "district":"South",
+            "taluka":"Quepem",
+            "type":"Temple",
+            "latitude":"15.228468419085031",
+            "longitude":"74.05065482367719",
+            "rating":"4"
+        },{
+            "name":"Fort of Cabo da Rama, Cabo de Rama in Canacona.",
+            "district":"South",
+            "taluka":"Canacona",
+            "type":"Fort",
+            "latitude":"15.088992064251936",
+            "longitude":"73.92163621018229",
+            "rating":"4.4"
+        },{
+            "name":"Site of Narayandev at Vichundre, Sanguem.",
+            "district":"South",
+            "taluka":"Sanguem",
+            "type":["Antiquity","Temple"],
+            "latitude":"15.1102480972527",
+            "longitude":"74.19187198421866",
+            "rating":"4.6"
+        },{
+            "name":"Cave at Rivona, Rivona in Sanguem.",
+            "district":"South",
+            "taluka":"Sanguem",
+            "type":"Cave",
+            "latitude":"15.16659619745952",
+            "longitude":"74.1106095661145",
+            "rating":"3.8"
+        },{
+            "name":"Cave at Khandepar, Khandepar in Ponda",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Cave",
+            "latitude":"15.464393787063964",
+            "longitude":"74.02701781966361",
+            "rating":"4.5"
+        },{
+            "name":"Cave at Ishwarbhat, Khandepar in Ponda.",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Cave",
+            "latitude":"15.450167299023619",
+            "longitude":"74.03949543087944",
+            "rating":"4.6"
+        },{
+            "name":"Cave at Mangueshi, Mangueshi in Ponda.",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Cave",
+            "latitude":"15.45518750373931",
+            "longitude":"73.96605086931018",
+            "rating":"4.7"
+        },{
+            "name":"Shri Nagueshi Temple, Nagueshi in Ponda",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Temple",
+            "latitude":"15.407685993323996",
+            "longitude":"73.9836555641572",
+            "rating":"4.7"
+        },{
+            "name":"Shree Kamakshi Temple, Shiroda in Ponda.",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Temple",
+            "latitude":"15.326688189218688",
+            "longitude":" 74.03557785940588",
+            "rating":"4.8"
+        },{
+            "name":"Shri Saptakoteshwar Temple, Khandepar in Ponda.",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Temple",
+            "latitude":"15.42930876577175",
+            "longitude":"74.04987702509585",
+            "rating":"4.5"
+        },{
+            "name":"Shri Mahadeva Temple, Agapur in Ponda.",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Temple",
+            "latitude":"15.426299741098468",
+            "longitude":" 74.04747344523882",
+            "rating":"4.8"
+        },{
+            "name":"Ruins of Jain Basti, Bandiwade in Ponda",
+            "district":"North",
+            "taluka":"Ponda",
+            "type":"Ruins",
+            "latitude":"15.408266332981553",
+            "longitude":" 73.98230194529904",
+            "rating":"4"
+        },{
+            "name":"Fort of Alorna, Alorna in Pedne .",
+            "district":"North",
+            "taluka":"Pernem",
+            "type":"Fort",
+            "latitude":"15.700457555668683",
+            "longitude":"73.90532342183518",
+            "rating":"4.1"
+        },{
+            "name":"Site of Rock Carving at Pansaimal, Pansaimal in Sanguem.",
+            "district":"South",
+            "taluka":"Sanguem",
+            "type":"Antiquity",
+            "latitude":"15.121036675570705",
+            "longitude":"74.13301065065934",
+            "rating":"4.5"
+        },{
+            "name":"Site of Rock Carving at Kazur, Kazur in Sanguem.",
+            "district":"South",
+            "taluka":"Sanguem",
+            "type":"Antiquity",
+            "latitude":"15.121036675570705",
+            "longitude":"74.13301065065934",
+            "rating":"4.5"
+        },{
+            "name":"British Cemetery at Dona Paula, Dona Paula in Tiswadi.",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Cemetery",
+            "latitude":"15.458521884392995",
+            "longitude":"73.79778465436947",
+            "rating":"3.8"
+        },{
+            "name":"Site of Fort of St. Estevam, St. Estevam in Tiswadi ",
+            "district":"North",
+            "taluka":"Tiswadi",
+            "type":"Fort",
+            "latitude":"15.536603111896587",
+            "longitude":"73.95535833385047",
+            "rating":"4.4"
+        },{
+            "name":"Fort of Khorjuve, Khorjuve in Bardez.",
+            "district":"North",
+            "taluka":"Bardez",
+            "type":"Fort",
+            "latitude":"15.597027427933057 ",
+            "longitude":"73.89275620834087",
+            "rating":"3.9"
+        },{
+            "name":"Cave at Siddhanath, Tarsurla in Bicholim",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":"Cave",
+            "latitude":"15.506100817170285",
+            "longitude":" 74.02558316755184",
+            "rating":"1"
+        },{
+            "name":"Adilshahi Mosque, Tar Surla, Bicholim",
+            "district":"North",
+            "taluka":"Bicholim",
+            "type":"Mosque",
+            "latitude":"15.497797843820628",
+            "longitude":"74.01855007950287",
+            "rating":"4.5"
+        },{
+            "name":"Fort of Mormugao, Mormugao.",
+            "district":"South",
+            "taluka":"Mormugao",
+            "type":"Fort",
+            "latitude":"15.400198675644164",
+            "longitude":"73.79124089299309",
+            "rating":"1"
+        },{
+            "name":"Site of Kaivailyamath, Consua in Mormugao",
+            "district":"South",
+            "taluka":"Mormugao",
+            "type":"Temple",
+            "latitude":"15.373983794204564",
+            "longitude":"73.92413799192644",
+            "rating":"5"
+        },{
+            "name":"Caves at Shigao, Marmagao.",
+            "district":"South",
+            "taluka":"Mormugao",
+            "type":"Cave",
+            "latitude":"15.372631734505855",
+            "longitude":"74.19117376018828",
+            "rating":"4.7"
+        },{
+            "name":"Fort of Terekhol, Terekhol in Pedne",
+            "district":"North",
+            "taluka":"Pernem",
+            "type":"Fort",
+            "latitude":"15.721459570557283",
+            "longitude":"73.68659118465888",
+            "rating":"4.2"
+        }
+    
+    ]
+}

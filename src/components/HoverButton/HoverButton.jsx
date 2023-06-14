@@ -1,9 +1,9 @@
 import React from 'react'
 import './HoverButton.css'
 
-const HoverButton = ({title}) => {
+const HoverButton = ({title, link}) => {
   return (
-<button class="btn_center">
+<button onClick={()=> console.log("link==>>", link) } class="btn_center">
     {title}
 </button>
 

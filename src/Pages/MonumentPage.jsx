@@ -36,7 +36,7 @@ const MonumentPage = () => {
       });
 
       axios
-      .get(`http://localhost:5000/api/v1/recommend/monument/${id}`)
+      .get(`http://localhost:5000/recommend/monument/${id}`)
       .then((res, err) => {
         if (err) {
           console.log("err", err);
@@ -61,7 +61,7 @@ const MonumentPage = () => {
         })
 
         setRecommendations(temp);
-
+        console.log(recommendations);
 
         // setRecommendations(res.data.response)
       })
@@ -136,11 +136,11 @@ const MonumentPage = () => {
 
   return (
     <>
-      <button onClick={() => {
+      {/* <button onClick={() => {
         // setRecommendations(recommendations);
         console.log("reccs re==>>", recommendations)}}>
         click
-      </button>
+      </button> */}
 
       <Row justify="center">
         <Col span={22}>
@@ -182,8 +182,8 @@ const MonumentPage = () => {
                 {data.visitingTime !== "" ? data.visitingTime : "Not Specified"}
               </Title>
               <div style={{ display: "flex" }}>
-                <HoverButton title="Maps" />
-                <HoverButton title="Geo" />
+                <HoverButton title="Maps" link={`https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`} />
+                <HoverButton title="Geo" link={`https://earth.google.com/web/@${data.latitude},${data.longitude},0a,1000d,35y,0h,0t,0r/data=CigiJgokCU8Vv8L1RnxKBahDkBJwYICABIA`} />
               </div>
               
             </Col>
