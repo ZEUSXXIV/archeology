@@ -15,7 +15,7 @@ const [state,setState]=React.useState({
     
     function handleChange(event){
         
-        handleButtonClick(); 
+        handleButtonClick({event}); 
         setState(prevValue=>({
             history:false,
             officers:false,
@@ -24,9 +24,9 @@ const [state,setState]=React.useState({
           
          }))
      }
-     const handleButtonClick = () => {
+     const handleButtonClick = ({event}) => {
         ReactGA.event({
-          category: 'Division',
+          category: event.target.name,
           action: 'Button Click',
           label: 'Button Label', 
         });

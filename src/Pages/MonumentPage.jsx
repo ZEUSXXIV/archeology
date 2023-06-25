@@ -10,6 +10,7 @@ import { Col, Row, Tag, Typography } from "antd";
 import { Rating } from "react-simple-star-rating";
 import HoverButton from "../components/HoverButton/HoverButton";
 import RecommendCard from "../components/RecommendCard/RecommendCard";
+import Map from "../components/Map/Map";
 
 const { Title } = Typography;
 
@@ -130,6 +131,10 @@ const MonumentPage = () => {
               </div>
               
             </Col>
+          </Row>
+
+          <Row justify="center" style={{margin:'5%'}} >
+            <Map lat={data.latitude} lng={data.longitude} />
           </Row>
         </Col>
       </Row>
