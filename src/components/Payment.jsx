@@ -5,8 +5,9 @@ import React from "react";
 // import "./App.css";
 import axios from "axios";
 import { Button } from "antd";
+import Alert from "./Alert/Alert.js";
 
-function Payment({saveData}) {
+function Payment({saveData, setAlert}) {
 
         const price = 100
 
@@ -35,7 +36,7 @@ function Payment({saveData}) {
             return;
         }
         console.log("result1===>>>>>>>")
-        const result = await axios.post("http://localhost:5000/payment/orders",{name:"naveen", price:price*100});
+        const result = await axios.post("http://localhost:5000/payment/orders",{name:"Naveen", price:price*100});
         console.log("result2===>>>>>>>", result)
         if (!result) {
             alert("Server error. Are you online?");
@@ -51,7 +52,7 @@ function Payment({saveData}) {
             key: "rzp_test_iccSMQd9SsOyWW", // Enter the Key ID generated from the Dashboard
             amount: amount.toString(),
             currency: currency,
-            name: "Soumya Corp.",
+            name: "Archaeology Department of Goa",
             description: "Test Transaction",
             // image: { logo },
             order_id: order_id,
@@ -66,18 +67,18 @@ function Payment({saveData}) {
                 console.log("response==>>", response)
 
                 const result = await axios.post("http://localhost:5000/payment/success", data);
-
-                alert(result.data.msg);
-
-                window.location.href = "/"
+                setAlert(true);
+                // alert(result.data.msg);
+                // setTimeout(()=>{setAlert(false)},10000);
+                // window.location.href = "/"
             },
             prefill: {
-                name: "Frutika",
-                email: "SoumyaDey@example.com",
+                name: "Archaeology Department of Goa",
+                email: "archaeologygoa@gmail.com",
                 contact: "9999999999",
             },
             notes: {
-                address: "Soumya Dey Corporate Office",
+                address: "Archaeology Department of Goa",
             },
             theme: {
                 color: "#61dafb",
@@ -89,12 +90,14 @@ function Payment({saveData}) {
     }
 
     return (
+        <>
         <button
         style={{ backgroundColor: "green" }}
         className="App-link" variant="outlined" onClick={displayRazorpay}
-      >
+        >
         Confirm
-      </button>
+        </button>
+        </>
         // <div >
 
     );

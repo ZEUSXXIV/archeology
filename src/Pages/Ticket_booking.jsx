@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide, Autoplay } from "swiper/react";
 import "swiper/css";
 import axios from "axios";
 import Payment from "../components/Payment";
+import Alert from "../components/Alert/Alert";
 
 export function Error({ errors }) {
   return (
@@ -26,8 +27,10 @@ export function Error({ errors }) {
     </div>
   );
 }
-const Ticket_Booking = () => {
 
+const Ticket_Booking = () => {
+  //name of variable, function=useState(initial state)
+  const [alert, setAlert]=useState(false);
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const {
@@ -60,7 +63,7 @@ const Ticket_Booking = () => {
       return
     }
 
-    axios.get(`http://localhost:5000/api/v1/monument`).then((res) => {
+    axios.get(`http://localhost:5000/api/v1/monumentfeatured`).then((res) => {
       console.log(res.data);
       let temp = []
       res.data.map((item)=>{
@@ -103,9 +106,11 @@ const Ticket_Booking = () => {
       console.log(res.data);
       // setData(res.data)
     });
+    
   }
   return (
-    <div className={`${Styles.Container}`}>
+    <>
+    <div className={`${Styles.Container}`} style={{ position: "relative" }}>
       <div className={`${Styles.Form}`}>
         <h1 className={`${Styles.Title}`}>Ticket Booking</h1>
 
@@ -124,7 +129,12 @@ const Ticket_Booking = () => {
         <input
           className={`${Styles.FormItem}`}
           name="contact"
-          {...register("contact", { required: "*Details Required" })}
+          {...register("contact", {
+            required: "*Details Required",
+            pattern: {
+              value: /^\d{10}$/,
+              message: "Please enter a 10-digit number",
+            },})}
         ></input>
 
         <label className={`${Styles.Label}`}>
@@ -133,7 +143,12 @@ const Ticket_Booking = () => {
         <input
           className={`${Styles.FormItem}`}
           name="email"
-          {...register("email", { required: "*Details Required" })}
+          {...register("email", {
+            required: "*Details Required",
+            pattern: {
+              value: /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$/,
+              message: "Please enter a valid email",
+            },})}
         ></input>
 
         <label className={`${Styles.Label}`}>
@@ -175,7 +190,6 @@ const Ticket_Booking = () => {
           onChange={handleChange}
           options={Data}
         />
-
         <button
           className={`${Styles.Button}`}
           onClick={handleSubmit((data) => {
@@ -236,7 +250,7 @@ const Ticket_Booking = () => {
           >
             Confirm
           </button> */}
-          <Payment saveData={saveData}/>
+          <Payment setAlert={setAlert} saveData={saveData}/>
           <button
             style={{ backgroundColor: "red" }}
             onClick={() => setIsModalOpen(false)}
@@ -245,7 +259,17 @@ const Ticket_Booking = () => {
           </button>
         </div>
       </Modal>
+      { alert && (
+      <div style={{position: "absolute",
+      top: "30%",
+      left: "40%",
+      zIndex: 2,
+      display:"flex", justifyContent:"center", alignItems:"center", verticalAlign:"middle"}}>
+      <Alert/>
+      </div>)}
     </div>
+    
+    </>
   );
 };
 
