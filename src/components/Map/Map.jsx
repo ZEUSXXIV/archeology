@@ -1,4 +1,4 @@
-import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import mapboxgl, {Marker,MapboxGeocoder} from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import { useEffect, useRef, useState } from 'react';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiemV1c3h4aXYiLCJhIjoiY2xiM2JocTJ2MDdsNzNzbXRlZWs1d2d3NCJ9.BNT2Re03l7T8egDTfvxOCw';
@@ -37,15 +37,25 @@ const Map = (props) => {
                 attributionControl: false   
                 
               });
+              
+              const marker=new Marker({ color: '#FF0000' })
+              .setLngLat([props.lng, props.lat])
+              .addTo(map.current);
+
+
+              // map.addControl(
+              //   new MapboxGeocoder({
+              //   accessToken: mapboxgl.accessToken,
+              //   mapboxgl: mapboxgl
+              //   })
+              //   );
+              
 
               
         }
 
-
-        
-
-
       },[props]);
+      
 
 //   useEffect(() => {
 //     mapboxgl.accessToken =

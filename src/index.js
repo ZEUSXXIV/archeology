@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Login from './pages/Login'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './Helpers/ProtectedRoute';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
