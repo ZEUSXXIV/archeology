@@ -31,7 +31,16 @@ const MonumentCard = ({ item }) => {
   return (
     <>
       <div className="card">
-        <div className="img" style={{backgroundImage:data?.main_img == "" ? Inf :`url('${data?.main_img}')`}} >
+        {/*<div className="img" style={{backgroundImage:data?.main_img == "" ? Inf :`url('${data?.main_img}')`}} >*/}
+        <div
+          className="img"
+          style={{
+            backgroundImage: data?.main_img === '' ? `url('${Inf}')` : `url('${data?.main_img}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            }}
+          >
           {/* <div className="save">
             <svg
               className="svg"
