@@ -99,7 +99,8 @@
       #263373,
       #242e6a
     ); */
-    background: linear-gradient(109.5deg, rgb(229, 233, 177) 11.2%, rgb(223, 205, 187) 100.2%);
+    /* background: linear-gradient(109.5deg, rgb(229, 233, 177) 11.2%, rgb(223, 205, 187) 100.2%); */
+    background: linear-gradient(120.5deg, rgba(255,255,255,1) 0%, rgba(255,237,204,1) 27%);
   }
   
   .mainMenu ul {
@@ -120,7 +121,7 @@
     -webkit-transition: all 0.2s;
     margin-top: 20px;
     padding: 5px 0;
-    color: white;
+    color: black;
   }
   
   .mainMenu ul li a {
@@ -144,7 +145,7 @@
   
   .mainMenu.open a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   
   .mainMenu.open div {

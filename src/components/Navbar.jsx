@@ -30,7 +30,7 @@ const Navbar = () => {
             // }}
             onClick={toggleClass}
           >
-            <BsX color="white" size="3rem" />
+            <BsX color="black" size="3rem" />
           </a>
         )}
         <ul>
@@ -45,6 +45,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/monument-list">MONUMENT DETAILS</a>
+          </li>
+          <li>
+            <a href="/ticket_booking">TICKET BOOKING</a>
           </li>
            <li>
             <a href="/gallery">GALLERY</a>

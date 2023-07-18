@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/Body.module.css";
 import Dummy from "../../assets/main.jpg";
+
 import { useSpring, animated } from "react-spring";
 
 const Body = () => {
@@ -36,13 +37,12 @@ const Body = () => {
         <div className={styles.scale2SuccessServices}>
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
-              <img src={Dummy} alt="profile" />
+              <img src={require('../../assets/Pics/16 Church of Reis Magos.jpg')} alt="profile" />
             </div>
             <div className={styles.scale2SuccessSingleServiceDetails}>
               <h2>Protected Monuments</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                numquam?
+                Check out all the protected monuments
               </p>
               <a className={styles.detailsCTA} href="/protected-monuments">
                 LEARN MORE
@@ -51,13 +51,12 @@ const Body = () => {
           </div>
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
-              <img src={Dummy} alt="profile" />
+              <img src={require('../../assets/Pics/03 Chapel of our lady  of monte Old Goa.jpg')} alt="profile" />
             </div>
             <div className={styles.scale2SuccessSingleServiceDetails}>
               <h2>Featured Monuments</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                numquam?
+                Check out the featured monuments
               </p>
               <a className={styles.detailsCTA} href="/featured-monuments">
                 LEARN MORE
@@ -66,13 +65,12 @@ const Body = () => {
           </div>
           <div div className={styles.scale2SuccessSingleService}>
             <div className={styles.scale2SuccessSingleServiceImage}>
-              <img src={Dummy} alt="profile" />
+              <img src={require('../../assets/monument_details_table.png')} alt="profile" />
             </div>
             <div className={styles.scale2SuccessSingleServiceDetails}>
               <h2>Monument Details</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                numquam?
+                Know the official monument details
               </p>
               <a className={styles.detailsCTA} href="/monument-list">
                 LEARN MORE
@@ -85,9 +83,7 @@ const Body = () => {
             </div>
             <div className={styles.scale2SuccessSingleServiceDetails}>
               <h2>About Us</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                numquam?
+              <p>About the organisation
               </p>
               <a
                 className={styles.detailsCTA}
@@ -124,7 +120,7 @@ const Body = () => {
           </a>
         </div>
         <div>
-          <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
+          <img src={require('../../assets/Pics/01 Ruins of Brahmapuri old Goa.jpg')} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
       <div className={styles.details}>
@@ -146,7 +142,7 @@ const Body = () => {
           </a>
         </div>
         <div>
-          <img src={Dummy} className={styles.ourServicesImage} alt="product" />
+          <img src={require('../../assets/Pics/02 Chapel of St Xavier old Goa.jpg')} className={styles.ourServicesImage} alt="product" />
         </div>
       </div>
       <div className={styles.detailsRev}>
@@ -167,20 +163,17 @@ const Body = () => {
           </a>
         </div>
         <div>
-          <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
+          <img src={require('../../assets/Pics/03 Chapel of our lady  of monte Old Goa.jpg')} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
       <div className={styles.details}>
         <div className={`${styles.detail} ${styles.knowMoreButtonLeft} `}>
           <h2 className={styles.detailsHeader}>
-            Ruins of College of St. Populo, Ella in Tiswadi.
+          Temple of Saptakoteswar, Narve in Bicholi
           </h2>
           <p className={styles.textRight}>
-            The College of St. Populo also known as Collegio de Populo was
-            situated near the Convent of Augustinians. It was built in 1600 by
-            the Provincial Fr. Pedro da Cruz for the training of the young
-            brethren (brothers) of the Augustinian order. Group of buildings of
-            Augustinians including this college were abandoned in 1835.
+          This is a temple dedicated to Shiva, worshipped in the form of a Linga as Saptakoteshwar.  
+          It was originally situated at Naroa, Diwar.  During the Portuguese persecution it was shifted to Narve Bicholim where Chhatrapati Shivaji, the great Maratha ruler ordered its construction on 13th November 1668.  The interior walls of the temple are decorated with kaavi art.  In the sabhamandap there is a black stone (granite) image of Nandi facing the Shivlinga.  Above the entrance door of the sabhamandap is the inscription of Chhatrapati Shivaji.  In front of the temple there is a deepsthamba with Nagabandha. 
           </p>
           <a
             className={styles.detailsCTA}
@@ -190,7 +183,7 @@ const Body = () => {
           </a>
         </div>
         <div>
-          <img src={Dummy} className={styles.ourServicesImage} alt="chart" />
+          <img src={require('../../assets/Pics/20 Temple of Saptakoteshwar, Narve Bicholim.jpg')} className={styles.ourServicesImage} alt="chart" />
         </div>
       </div>
       <div className={styles.detailsRev}>
@@ -217,7 +210,7 @@ const Body = () => {
           </a>
         </div>
         <div>
-          <img src={Dummy} className={styles.ourServicesImage} alt="shoutout" />
+          <img src={require('../../assets/Pics/04 St Monica old Goa.jpg')} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
       <footer>

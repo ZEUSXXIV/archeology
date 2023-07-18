@@ -33,12 +33,7 @@ const Ticket_Booking = () => {
   const [alert, setAlert]=useState(false);
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const {
-    register,
-    getValues,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, getValues, handleSubmit,formState: { errors }} = useForm();
   const [value, setValue] = useState();
 
   const [Data, setData] = useState([]);
