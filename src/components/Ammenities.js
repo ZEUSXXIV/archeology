@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Amenities = ({latitude, longitude}) => {
+const Amenities = () => {
   const [amenities, setAmenities] = useState([]);
 
   var accessToken =
@@ -10,25 +10,44 @@ const Amenities = ({latitude, longitude}) => {
   useEffect(() => {
     const getNearbyAmenities = async () => {
       try {
-        const latitude = 15.5937; // Latitude of the location
-        const longitude = 73.8142; // Longitude of the location
+        const latitude = 15.4766776; // Latitude of the location
+        const longitude = 73.7349409; // Longitude of the location
         // const amenityType = "restaurant"; // Type of amenity to search for
         // const amenityType = "fuel"; 
         const amenityType = "hospital"; 
-        const country = "in";
+        const country = "in"; 
 
         const response = await axios.get(
-          `https://api.mapbox.com/geocoding/v5/mapbox.places/${amenityType}.json`,
+          // `https://api.mapbox.com/geocoding/v5/mapbox.places/${amenityType}.json`,
+          `https://api.mapbox.com/geocoding/v5/mapbox.places`,
           {
             params: {
               access_token: accessToken,
               country: country,
               proximity: [longitude, latitude],
-              type:'postcode',
-              limit:2
+              categories: 'pharmacy',
+              // type:'postcode',
+              // limit:3,
+              // autocomplete:true,
+              // fuzzyMatch:true,
+              // bbox:'73.7049409,15.4266776,73.7849409,15.5066776'
             },
           }
         );
+
+        // const response = await axios.get(
+        //   `https://api.mapbox.com/geocoding/v5/mapbox.places/${longitude},${latitude}.json`,
+        //   {
+        //     params: {
+        //       access_token: accessToken,
+        //       // country: country,
+        //       // limit:3,
+        //     },
+        //   }
+        // );
+
+
+        console.log("response==>>", response)
 
         if (response.status === 200) {
           const features = response.data.features;

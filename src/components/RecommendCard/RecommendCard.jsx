@@ -4,6 +4,7 @@ import { Rating } from "react-simple-star-rating";
 import Button from "./Button";
 import { Tag } from "antd";
 import axios from "axios";
+import Inf from "../../assets/inf.jpg"
 
 const RecommendCard = ({ item }) => {
   // const [rating, setRating] = useState(item.rating)
@@ -30,7 +31,12 @@ const RecommendCard = ({ item }) => {
   return (
     <>
       <div className="reccard">
-        <div className="recimg" style={{backgroundImage:`url('${data?.main_img}')`}} >
+        <div className="recimg"           style={{
+            backgroundImage: data?.main_img === '' ? `url('${Inf}')` : `url('${data?.main_img}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            }} >
 
         </div>
 
