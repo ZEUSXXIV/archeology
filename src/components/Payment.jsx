@@ -7,9 +7,9 @@ import axios from "axios";
 import { Button } from "antd";
 import Alert from "./Alert/Alert.js";
 
-function Payment({saveData, setAlert}) {
+function Payment({saveData, setAlert, ticket, id, onClose, }) {
 
-        const price = 100
+    const price = 100
 
     function loadScript(src) {
         return new Promise((resolve) => {
@@ -36,7 +36,7 @@ function Payment({saveData, setAlert}) {
             return;
         }
         console.log("result1===>>>>>>>")
-        const result = await axios.post("http://localhost:5000/payment/orders",{name:"Naveen", price:price*100});
+        const result = await axios.post("http://localhost:5000/payment/orders",{name:"Naveen", ticket, id});
         console.log("result2===>>>>>>>", result)
         if (!result) {
             alert("Server error. Are you online?");
@@ -71,6 +71,7 @@ function Payment({saveData, setAlert}) {
                 // alert(result.data.msg);
                 // setTimeout(()=>{setAlert(false)},10000);
                 // window.location.href = "/"
+                onClose();
             },
             prefill: {
                 name: "Archaeology Department of Goa",
@@ -88,6 +89,7 @@ function Payment({saveData, setAlert}) {
         const paymentObject = new window.Razorpay(options);
         paymentObject.open();
     }
+    
 
     return (
         <>

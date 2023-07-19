@@ -3,7 +3,7 @@ import React from "react"
 import Officer from './Officer'
 import History from './History'
 import Image from "../assets/Chart.jpg";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Typography, Button } from "antd";
 export default function Guide(){
 
@@ -27,8 +27,8 @@ const [state,setState]=React.useState({
      const handleButtonClick = ({event}) => {
         ReactGA.event({
           category: event.target.name,
-          action: 'Button Click',
-          label: 'Button Label', 
+          action: `${event.target.name} Click`,
+          label: `${event.target.name} Label`, 
         });
       };
     return(

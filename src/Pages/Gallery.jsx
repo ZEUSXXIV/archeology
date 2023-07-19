@@ -5,6 +5,7 @@ import Gallery_component from "../components/Gallery_component";
 import { Typography } from "antd";
 import Styles from "../styles/Gallery.module.css"
 import axios from "axios";
+import ReactGA from "react-ga4";
 
 const Gallery = () => {
         const [activeItem, setActiveItem] = useState(null);
@@ -43,6 +44,11 @@ const Gallery = () => {
       < >
             {item.main_img && <div onClick={() => {
                 setActiveItem(item);
+                ReactGA.event({
+                  category: 'Gallery',
+                  action: 'Image Clicked',
+                  label: item.monument_id,
+                });
                 window.location.href="/subgallery/"+item.monument_id;
               }}>{
               <Gallery_component

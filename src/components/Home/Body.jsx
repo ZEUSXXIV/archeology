@@ -1,16 +1,46 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from "../../styles/Body.module.css";
 import Dummy from "../../assets/main.jpg";
 
 import { useSpring, animated } from "react-spring";
+// import Top from "./Top";
+import axios from "axios";
 
 const Body = () => {
+  // const [top, setTop ] = useState([]);
+  // const [mainImage, setMainImage] = useState("")
   const props=useSpring({
     from:{opacity:0},
     to:{opacity:1},
     //try to make it when you scroll down instead
     config: {duration: 3000}
   });
+  // useEffect(() => {
+  //   console.log("id==>>", item._id);
+    
+  //   axios
+  //     .get(`http://localhost:5000/api/v1/gallery/${item._id}`)
+  //     .then((res, err) => {
+  //       if (err) {
+  //         console.log("err", err);
+  //         return
+  //       }
+  //       setMainImage(res.data[0].main_img)
+  //     });
+
+  //   axios
+  //     .get(`http://localhost:5000/google/top`)
+  //     .then((res, err) => {
+  //       if (err) {
+  //         console.log("err", err);
+  //       }
+
+  //       console.log(res.data);
+  //       setTop(res.data[0]);
+  //     });
+
+
+  // }, []);
   return (
     <div className={styles.body}>
       <div className={styles.headerText}>
@@ -18,7 +48,7 @@ const Body = () => {
           DEPARTMENT OF ARCHAEOLOGY GOVERNMENT OF GOA
         </div>
         <p>
-          Archaeology Department headed by the Director (Add. Charge),
+          Archaeology Department headed by the Director Dr. Nilesh B. Fal Dessai,
           undertakes village wise survey of the antiquities and also
           conservation, restoration and vegetation clearance work at the 51
           monuments/sites protected under the Goa Ancient Monuments and
@@ -213,9 +243,14 @@ const Body = () => {
           <img src={require('../../assets/Pics/04 St Monica old Goa.jpg')} className={styles.ourServicesImage} alt="shoutout" />
         </div>
       </div>
-      <footer>
-        
-      </footer>
+      {/*top.map((monu) => {
+      //   console.log("monu==>>", monu);
+      //   return (
+      //     <div key={monu.site}>
+      //       <Top item={monu} />
+      //     </div>
+      //   );
+      // })}*/}
     </div>
   );
 };

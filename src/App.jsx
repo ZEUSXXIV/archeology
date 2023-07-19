@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { Button } from "antd";
 import React from "react";
 import { useEffect } from "react";
@@ -23,6 +23,7 @@ import MonumentList from "./pages/MonumentList";
 import Gallery from "./pages/Gallery";
 import SubGallery from "./components/SubGallery";
 import Ticket_Booking from "./pages/Ticket_booking";
+import { Helmet } from 'react-helmet';
 
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -30,11 +31,15 @@ import Navbar from "./components/Navbar";
 
 import SimpleReactFooter from "simple-react-footer";
 import MonumentPage from "./pages/MonumentPage";
+import './gtag';
 
 const App =  () => {
-  ReactGA.initialize('UA-273414908-1');
-  ReactGA.pageview(window.location.pathname + window.location.search);
-  
+  // ReactGA.initialize('UA-273414908-1');
+  ReactGA.initialize('G-H56ZYHKMWG')
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+
+  // ReactGA.pageview(window.location.pathname + window.location.search);
+  <script async src="./gtag"></script>
 
   console.log("location==>>", window.location.href)
   const [isLoggedIn, setIsLoggedIn] = useState(

@@ -20,6 +20,8 @@ import axios from "axios";
 import Payment from "../components/Payment";
 import Alert from "../components/Alert/Alert";
 
+import {base} from '../baseurl';
+
 export function Error({ errors }) {
   return (
     <div className={`${Styles.error}`}>
@@ -57,8 +59,7 @@ const Ticket_Booking = () => {
       window.location.href = "/login"
       return
     }
-
-    axios.get(`http://localhost:5000/api/v1/monumentfeatured`).then((res) => {
+    axios.get(`${base}/api/v1/monumentfeatured`).then((res) => {
       console.log(res.data);
       let temp = []
       res.data.map((item)=>{
@@ -93,7 +94,7 @@ const Ticket_Booking = () => {
 
     console.log("req==>>", req);
 
-    axios.post("http://localhost:5000/api/v1/ticket", req).then((res, err) => {
+    axios.post(`${base}/api/v1/ticket`, req).then((res, err) => {
       if (err) {
         console.log("err", err);
       }
@@ -245,7 +246,7 @@ const Ticket_Booking = () => {
           >
             Confirm
           </button> */}
-          <Payment setAlert={setAlert} saveData={saveData}/>
+          <Payment setAlert={setAlert} saveData={saveData} ticket={parseInt(value?.ticket)} id={selectedMonumentId} onClose={() => setIsModalOpen(false)}/>
           <button
             style={{ backgroundColor: "red" }}
             onClick={() => setIsModalOpen(false)}
@@ -255,11 +256,13 @@ const Ticket_Booking = () => {
         </div>
       </Modal>
       { alert && (
-      <div style={{position: "absolute",
+      <div className={Styles.alertbox} 
+      style={{position: "absolute",
       top: "30%",
       left: "40%",
       zIndex: 2,
-      display:"flex", justifyContent:"center", alignItems:"center", verticalAlign:"middle"}}>
+      display:"flex", justifyContent:"center", alignItems:"center", verticalAlign:"middle"}}
+      >
       <Alert/>
       </div>)}
     </div>
