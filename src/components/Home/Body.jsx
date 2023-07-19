@@ -87,7 +87,7 @@ const Body = () => {
             );
 
             var resp = res.data[0];
-            resp.imageUrl = gallery.data[0]?.main_img;
+            resp.imageUrl = gallery.data[0]?.main_img !== ''? gallery.data[0]?.main_img: require('../../assets/inf.jpg');
 
             return resp;
           })
